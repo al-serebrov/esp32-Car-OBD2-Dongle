@@ -1,0 +1,4 @@
+PASS: simulation bounds/endpoints, up/down redraw equivalence, framebuffer guards, dirty tracking
+PASS: button bounce/single/double/hold/boot, theme/page redraw, missing/stale/zero metrics
+PASS: strict PIDs, multi-ECU MIL, 3s background scheduling on both pages, speed priority, optional recovery, body probes
+PASS: flash rollover, ordered export, reboot retention, CRC, all 256 interrupted writes, interrupted erases

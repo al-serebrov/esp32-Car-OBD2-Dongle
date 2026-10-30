@@ -1,0 +1,111 @@
+Processing esp32doit-devkit-v1-backlight (platform: espressif32@6.12.0; board: esp32doit-devkit-v1; framework: espidf)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32doit-devkit-v1.html
+PLATFORM: Espressif 32 (6.12.0) > DOIT ESP32 DEVKIT V1
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-espidf @ 3.50500.0 (5.5.0) 
+ - tool-cmake @ 3.30.2 
+ - tool-esp-rom-elfs @ 0.0.1+20241011 
+ - tool-esptoolpy @ 2.40900.250804 (4.9.0) 
+ - tool-mkfatfs @ 2.0.1 
+ - tool-mklittlefs @ 1.203.210628 (2.3) 
+ - tool-mkspiffs @ 2.230.0 (2.30) 
+ - tool-ninja @ 1.9.0 
+ - tool-riscv32-esp-elf-gdb @ 12.1.0+20221002 
+ - tool-xtensa-esp-elf-gdb @ 12.1.0+20221002 
+ - toolchain-esp32ulp @ 1.23800.240113 (2.38.0) 
+ - toolchain-xtensa-esp-elf @ 14.2.0+20241119
+Reading CMake configuration...
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 0 compatible libraries
+Scanning dependencies...
+No dependencies
+Building in release mode
+Linking .pio/build/esp32doit-devkit-v1-backlight/firmware.elf
+Retrieving maximum program size .pio/build/esp32doit-devkit-v1-backlight/firmware.elf
+Checking size .pio/build/esp32doit-devkit-v1-backlight/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  13.5% (used 44400 bytes from 327680 bytes)
+Flash: [===       ]  34.9% (used 732701 bytes from 2097152 bytes)
+Building .pio/build/esp32doit-devkit-v1-backlight/firmware.bin with action:
+  "$PYTHONEXE" "$OBJCOPY" --chip esp32 elf2image --flash_mode ${__get_board_flash_mode(__env__)} --flash_freq ${__get_board_f_image(__env__)} --flash_size 4MB --elf-sha256-offset 0xb0 -o $TARGET $SOURCES
+Building .pio/build/esp32doit-devkit-v1-backlight/firmware.bin
+esptool.py v4.9.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Configuring upload protocol...
+AVAILABLE: cmsis-dap, esp-bridge, esp-prog, espota, esptool, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa
+CURRENT: upload_protocol = esptool
+Looking for upload port...
+Using manually specified: /dev/cu.usbserial-0001
+Uploading .pio/build/esp32doit-devkit-v1-backlight/firmware.bin
+esptool.py v4.9.0
+Serial port /dev/cu.usbserial-0001
+Connecting...........
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 84:1f:e8:68:17:90
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x000c2fff...
+SHA digest in image updated
+Compressed 26240 bytes to 16489...
+Writing at 0x00001000... (50 %)
+Writing at 0x000075f7... (100 %)
+Wrote 26240 bytes (16489 compressed) at 0x00001000 in 0.8 seconds (effective 263.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 123...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (123 compressed) at 0x00008000 in 0.1 seconds (effective 341.2 kbit/s)...
+Hash of data verified.
+Compressed 733104 bytes to 430070...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d412... (7 %)
+Writing at 0x000299d0... (11 %)
+Writing at 0x00032930... (14 %)
+Writing at 0x00037ff5... (18 %)
+Writing at 0x0003d7e7... (22 %)
+Writing at 0x00043d54... (25 %)
+Writing at 0x000498df... (29 %)
+Writing at 0x0004f5e3... (33 %)
+Writing at 0x00055499... (37 %)
+Writing at 0x0005b5bb... (40 %)
+Writing at 0x00061209... (44 %)
+Writing at 0x000678a9... (48 %)
+Writing at 0x0006d7fb... (51 %)
+Writing at 0x0007342f... (55 %)
+Writing at 0x0007948a... (59 %)
+Writing at 0x0007eed9... (62 %)
+Writing at 0x000849e8... (66 %)
+Writing at 0x0008a3d0... (70 %)
+Writing at 0x000904a0... (74 %)
+Writing at 0x0009a2b7... (77 %)
+Writing at 0x000a0e87... (81 %)
+Writing at 0x000aa003... (85 %)
+Writing at 0x000af942... (88 %)
+Writing at 0x000b5087... (92 %)
+Writing at 0x000bae83... (96 %)
+Writing at 0x000c13ed... (100 %)
+Wrote 733104 bytes (430070 compressed) at 0x00010000 in 10.9 seconds (effective 537.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+========================= [SUCCESS] Took 28.02 seconds =========================
+
+Environment                    Status    Duration
+-----------------------------  --------  ------------
+esp32doit-devkit-v1-backlight  SUCCESS   00:00:28.020
+========================= 1 succeeded in 00:00:28.020 =========================

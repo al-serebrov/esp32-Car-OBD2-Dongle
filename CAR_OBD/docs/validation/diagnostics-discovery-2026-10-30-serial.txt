@@ -1,0 +1,157 @@
+ets Jul 29 2019 12:21:46
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080630
+I (29) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (29) boot: compile time Oct 30 2026 13:31:48
+I (29) boot: Multicore bootloader
+I (31) boot: chip revision: v3.1
+I (33) boot.esp32: SPI Speed      : 40MHz
+I (37) boot.esp32: SPI Mode       : DIO
+I (41) boot.esp32: SPI Flash Size : 4MB
+I (44) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (51) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00200000
+I (77) boot:  3 fieldlog         Unknown data     01 40 00210000 001f0000
+I (84) boot: End of partition table
+I (87) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24410h (148496) map
+I (145) esp_image: segment 1: paddr=00034438 vaddr=3ff80000 size=00020h (    32) load
+I (145) esp_image: segment 2: paddr=00034460 vaddr=3ffbdb60 size=07308h ( 29448) load
+I (160) esp_image: segment 3: paddr=0003b770 vaddr=40080000 size=048a8h ( 18600) load
+I (167) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=7715ch (487772) map
+I (334) esp_image: segment 5: paddr=000b7184 vaddr=400848a8 size=158f0h ( 88304) load
+I (382) boot: Loaded app from partition at offset 0x10000
+I (382) boot: Disabling RNG early entropy source...
+I (393) cpu_start: Multicore app
+I (401) cpu_start: Pro cpu start user code
+I (401) cpu_start: cpu freq: 160000000 Hz
+I (401) app_init: Application information:
+I (402) app_init: Project name:     CAR_OBD
+I (405) app_init: App version:      0.3.11
+I (409) app_init: Compile time:     Oct 30 2026 13:31:18
+I (414) app_init: ELF file SHA256:  8648db7bd...
+I (419) app_init: ESP-IDF:          5.5.0
+I (422) efuse_init: Min chip rev:     v0.0
+I (426) efuse_init: Max chip rev:     v3.99
+I (430) efuse_init: Chip rev:         v3.1
+I (434) heap_init: Initializing. RAM available for dynamic allocation:
+I (440) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
+I (445) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
+I (450) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
+I (456) heap_init: At 3FFCB000 len 00015000 (84 KiB): DRAM
+I (461) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (466) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (472) heap_init: At 4009A198 len 00005E68 (23 KiB): IRAM
+I (479) spi_flash: detected chip: boya
+I (480) spi_flash: flash io: dio
+I (484) coexist: coex firmware version: 831ec70
+I (489) main_task: Started on CPU0
+I (499) main_task: Calling app_main()
+LOG BOOT version=0.3.11 elf=8648db7b reset_reason=1 target=V-LINK poll_ms=250 stale_ms=1500
+LOG HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+LOG BACKLIGHT mode=IMAGE GPIO4 unused; backlight remains fixed
+I (2899) gc9a01: LCD panel create success, version: 2.0.4
+I (3029) display: GC9A01 configured: 240x240, SPI=20000000 Hz, CS=25 (write-only, no panel detection)
+LOG IMAGE_DIM percent=100 backlight=unchanged
+I (4479) BTDM_INIT: BT controller compile version [b992c7d]
+I (4489) BTDM_INIT: Bluetooth MAC: 84:1f:e8:68:17:92
+LOG BUTTON_INIT gpio=21 active_low=1 debounce_ms=30 double_ms=300 hold_ms=1000
+I (4489) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07
+I (4579) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)
+Commands: logs, diagreport, brightness 0..100, dimtest on/off, help
+DIAG_REPORT_ERROR no valid saved run error=ESP_ERR_NVS_NOT_FOUND
+LOG BT_INIT target=V-LINK legacy PIN configured; device discovery each boot
+LOG UI_MODE DEMO; USB commands: logs, diagreport, brightness 0..100, dimtest on/off, help
+LOG BT_SPP_INIT status=0
+LOG DIAG_CONFIG page=3 custom_candidates=14 advertised_Mode01=1 readonly=1 mapping_verified=0 report_bytes=7608
+LOG ENGINE_MONITOR enabled=1 mil_ms=10000 coolant_ms=20000 voltage_ms=20000 body_below_kmh=10 demo_preview=1
+LOG BT_SCAN_START duration_units=8 target=V-LINK
+LOG WARNING_THRESHOLDS temperature_on_C=105 off_C=100 low_voltage_below_mV=12600 clears_mV=12800 voltage_source=ATRV
+LOG BODY_PROBE enabled=0 tx=770 rx=778 DID=BC03 startup_ms=10000 poll_ms=5000 retry_ms=60000 mapping_verified=0 log_only=1
+LOG DEMO_STEP kmh=11 step_ms=3000
+LOG BT_DISCOVERY state=started
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-50 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-50 name="BlueTooth Printer"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-45 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-54 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=1C:79:2D:51:08:FB rssi=-83 name="<not advertised>"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=1C:79:2D:51:08:FB rssi=-86 name="<not advertised>"
+LOG DEMO_STEP kmh=22 step_ms=3000
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-48 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-49 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-52 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-47 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-48 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-47 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-48 name="BlueTooth Printer"
+LOG DEMO_STEP kmh=33 step_ms=3000
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-50 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-51 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-48 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=1C:79:2D:51:08:FB rssi=-81 name="<not advertised>"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-47 name="alex-ThinkPad-T470p"
+LOG DEMO_STEP kmh=44 step_ms=3000
+LOG DISCOVER mac=1C:79:2D:51:08:FB rssi=-82 name="DIGI R2A"
+LOG HEALTH mode=DEMO shown_kmh=44 max_draw_us=39782 heap=37264 largest=34816 stack=1112 page=SPEED theme=NIGHT brightness=100
+LOG BT_DISCOVERY state=stopped
+LOG BT_RETRY reason=V-LINK not found delay_ms=3000
+LOG DEMO_STEP kmh=55 step_ms=3000
+LOG BT_SCAN_START duration_units=8 target=V-LINK
+LOG BT_DISCOVERY state=started
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-50 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-51 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-48 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DEMO_STEP kmh=66 step_ms=3000
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-51 name="BlueTooth Printer"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-46 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-47 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=1C:79:2D:51:08:FB rssi=-82 name="<not advertised>"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-45 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-53 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-45 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-51 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-46 name="alex-ThinkPad-T470p"
+LOG DEMO_STEP kmh=77 step_ms=3000
+LOG DISCOVER mac=1C:79:2D:51:08:FB rssi=-79 name="DIGI R2A"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-50 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG HEALTH mode=DEMO shown_kmh=77 max_draw_us=66855 heap=37264 largest=34816 stack=1112 page=SPEED theme=NIGHT brightness=100
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-52 name="BlueTooth Printer"
+LOG DEMO_STEP kmh=88 step_ms=3000
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-45 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-51 name="alex-ThinkPad-T470p"
+LOG BT_DISCOVERY state=stopped
+LOG BT_RETRY reason=V-LINK not found delay_ms=6000
+LOG DEMO_STEP kmh=99 step_ms=3000
+LOG OBD_HEALTH stack_free_bytes=1936 queue_pending=0
+LOG DEMO_STEP kmh=111 step_ms=3000
+LOG BT_SCAN_START duration_units=8 target=V-LINK
+LOG BT_DISCOVERY state=started
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-49 name="BlueTooth Printer"
+LOG DEMO_STEP kmh=11 step_ms=3000

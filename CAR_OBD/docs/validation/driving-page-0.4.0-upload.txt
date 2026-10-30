@@ -1,0 +1,106 @@
+Processing esp32doit-devkit-v1-image-dimming (platform: espressif32@6.12.0; board: esp32doit-devkit-v1; framework: espidf)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32doit-devkit-v1.html
+PLATFORM: Espressif 32 (6.12.0) > DOIT ESP32 DEVKIT V1
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-espidf @ 3.50500.0 (5.5.0) 
+ - tool-cmake @ 3.30.2 
+ - tool-esp-rom-elfs @ 0.0.1+20241011 
+ - tool-esptoolpy @ 2.40900.250804 (4.9.0) 
+ - tool-mkfatfs @ 2.0.1 
+ - tool-mklittlefs @ 1.203.210628 (2.3) 
+ - tool-mkspiffs @ 2.230.0 (2.30) 
+ - tool-ninja @ 1.9.0 
+ - tool-riscv32-esp-elf-gdb @ 12.1.0+20221002 
+ - tool-xtensa-esp-elf-gdb @ 12.1.0+20221002 
+ - toolchain-esp32ulp @ 1.23800.240113 (2.38.0) 
+ - toolchain-xtensa-esp-elf @ 14.2.0+20241119
+Reading CMake configuration...
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 0 compatible libraries
+Scanning dependencies...
+No dependencies
+Building in release mode
+Retrieving maximum program size .pio/build/esp32doit-devkit-v1-image-dimming/firmware.elf
+Checking size .pio/build/esp32doit-devkit-v1-image-dimming/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  16.9% (used 55344 bytes from 327680 bytes)
+Flash: [=====     ]  53.8% (used 1127497 bytes from 2097152 bytes)
+Configuring upload protocol...
+AVAILABLE: cmsis-dap, esp-bridge, esp-prog, espota, esptool, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa
+CURRENT: upload_protocol = esptool
+Looking for upload port...
+Auto-detected: /dev/cu.usbserial-0001
+Uploading .pio/build/esp32doit-devkit-v1-image-dimming/firmware.bin
+esptool.py v4.9.0
+Serial port /dev/cu.usbserial-0001
+Connecting.......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 84:1f:e8:68:17:90
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x00123fff...
+SHA digest in image updated
+Compressed 26240 bytes to 16490...
+Writing at 0x00001000... (50 %)
+Writing at 0x000075f7... (100 %)
+Wrote 26240 bytes (16490 compressed) at 0x00001000 in 0.8 seconds (effective 267.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 123...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (123 compressed) at 0x00008000 in 0.1 seconds (effective 336.6 kbit/s)...
+Hash of data verified.
+Compressed 1127904 bytes to 480991...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001ca09... (6 %)
+Writing at 0x0002b915... (10 %)
+Writing at 0x00042f9d... (13 %)
+Writing at 0x00081319... (16 %)
+Writing at 0x0008f5da... (20 %)
+Writing at 0x00095693... (23 %)
+Writing at 0x0009acf7... (26 %)
+Writing at 0x000a0748... (30 %)
+Writing at 0x000a6004... (33 %)
+Writing at 0x000ac571... (36 %)
+Writing at 0x000b2201... (40 %)
+Writing at 0x000b8359... (43 %)
+Writing at 0x000be43e... (46 %)
+Writing at 0x000c4251... (50 %)
+Writing at 0x000ca541... (53 %)
+Writing at 0x000d0372... (56 %)
+Writing at 0x000d5ff9... (60 %)
+Writing at 0x000dc076... (63 %)
+Writing at 0x000e1bd2... (66 %)
+Writing at 0x000e7785... (70 %)
+Writing at 0x000ed11e... (73 %)
+Writing at 0x000f2b8d... (76 %)
+Writing at 0x000f9bdb... (80 %)
+Writing at 0x001027d6... (83 %)
+Writing at 0x00109a9e... (86 %)
+Writing at 0x0010f5d2... (90 %)
+Writing at 0x00114af8... (93 %)
+Writing at 0x0011a9be... (96 %)
+Writing at 0x00121025... (100 %)
+Wrote 1127904 bytes (480991 compressed) at 0x00010000 in 14.7 seconds (effective 614.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+========================= [SUCCESS] Took 24.49 seconds =========================
+
+Environment                        Status    Duration
+---------------------------------  --------  ------------
+esp32doit-devkit-v1-image-dimming  SUCCESS   00:00:24.491
+========================= 1 succeeded in 00:00:24.491 =========================

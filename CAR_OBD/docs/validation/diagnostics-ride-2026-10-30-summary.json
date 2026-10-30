@@ -1,0 +1,1545 @@
+{
+  "raw_sha256": "293e73a32d7543dd3c9141999dcacc011ac3fada12e9afabe32e42c76cc2d5a7",
+  "report_sha256": "a4320bcea924493a1bb73f9219d1fcce59e90557ee3e619e3e3e4a6c20ec2d5a",
+  "records": 7933,
+  "first_sequence": 174135,
+  "last_sequence": 182067,
+  "car_boot": 191,
+  "standard_outcomes": {
+    "SUCCESS": 37,
+    "NOT_ADVERTISED": 55,
+    "CONFLICTING": 1
+  },
+  "custom_outcomes": {
+    "FORMAT_ERROR": 4,
+    "ECU_REJECTED": 3,
+    "NO_DATA": 7
+  },
+  "speed_samples": 871,
+  "speed_gap_median_ms": 323.0,
+  "speed_gap_max_ms": 1094,
+  "items": [
+    {
+      "id": "1",
+      "name": "ECU_errors",
+      "request": "0101",
+      "status": "SUCCESS",
+      "success_count": "5",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "4",
+      "last": "00000000"
+    },
+    {
+      "id": "2",
+      "name": "freeze_frame_DTC",
+      "request": "0102",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "3",
+      "name": "fuel_system_status",
+      "request": "0103",
+      "status": "SUCCESS",
+      "success_count": "5",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "0200"
+    },
+    {
+      "id": "4",
+      "name": "engine_load",
+      "request": "0104",
+      "status": "SUCCESS",
+      "success_count": "5",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "96"
+    },
+    {
+      "id": "5",
+      "name": "coolant_temperature",
+      "request": "0105",
+      "status": "SUCCESS",
+      "success_count": "5",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "77"
+    },
+    {
+      "id": "6",
+      "name": "short_fuel_trim_B1",
+      "request": "0106",
+      "status": "SUCCESS",
+      "success_count": "5",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "80"
+    },
+    {
+      "id": "7",
+      "name": "long_fuel_trim_B1",
+      "request": "0107",
+      "status": "SUCCESS",
+      "success_count": "5",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "6F"
+    },
+    {
+      "id": "8",
+      "name": "standard_PID",
+      "request": "0108",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "9",
+      "name": "standard_PID",
+      "request": "0109",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "10",
+      "name": "fuel_pressure",
+      "request": "010A",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "11",
+      "name": "intake_pressure",
+      "request": "010B",
+      "status": "SUCCESS",
+      "success_count": "5",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "3A"
+    },
+    {
+      "id": "12",
+      "name": "engine_RPM",
+      "request": "010C",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "0D24"
+    },
+    {
+      "id": "13",
+      "name": "speed",
+      "request": "010D",
+      "status": "SUCCESS",
+      "success_count": "1",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "00"
+    },
+    {
+      "id": "14",
+      "name": "ignition_timing",
+      "request": "010E",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "9B"
+    },
+    {
+      "id": "15",
+      "name": "intake_temperature",
+      "request": "010F",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "46"
+    },
+    {
+      "id": "16",
+      "name": "air_flow",
+      "request": "0110",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "17",
+      "name": "throttle",
+      "request": "0111",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "2E"
+    },
+    {
+      "id": "18",
+      "name": "standard_PID",
+      "request": "0112",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "19",
+      "name": "oxygen_sensors_present",
+      "request": "0113",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "03"
+    },
+    {
+      "id": "20",
+      "name": "oxygen_sensor_1",
+      "request": "0114",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "1D82"
+    },
+    {
+      "id": "21",
+      "name": "oxygen_sensor_2",
+      "request": "0115",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "9DFF"
+    },
+    {
+      "id": "22",
+      "name": "standard_PID",
+      "request": "0116",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "23",
+      "name": "standard_PID",
+      "request": "0117",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "24",
+      "name": "standard_PID",
+      "request": "0118",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "25",
+      "name": "standard_PID",
+      "request": "0119",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "26",
+      "name": "standard_PID",
+      "request": "011A",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "27",
+      "name": "standard_PID",
+      "request": "011B",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "28",
+      "name": "OBD_standard",
+      "request": "011C",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "06"
+    },
+    {
+      "id": "29",
+      "name": "standard_PID",
+      "request": "011D",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "30",
+      "name": "standard_PID",
+      "request": "011E",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "31",
+      "name": "engine_runtime",
+      "request": "011F",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "0117"
+    },
+    {
+      "id": "33",
+      "name": "distance_with_MIL",
+      "request": "0121",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "0000"
+    },
+    {
+      "id": "34",
+      "name": "standard_PID",
+      "request": "0122",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "35",
+      "name": "fuel_rail_pressure",
+      "request": "0123",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "36",
+      "name": "standard_PID",
+      "request": "0124",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "37",
+      "name": "standard_PID",
+      "request": "0125",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "38",
+      "name": "standard_PID",
+      "request": "0126",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "39",
+      "name": "standard_PID",
+      "request": "0127",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "40",
+      "name": "standard_PID",
+      "request": "0128",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "41",
+      "name": "standard_PID",
+      "request": "0129",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "42",
+      "name": "standard_PID",
+      "request": "012A",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "43",
+      "name": "standard_PID",
+      "request": "012B",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "44",
+      "name": "standard_PID",
+      "request": "012C",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "45",
+      "name": "standard_PID",
+      "request": "012D",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "46",
+      "name": "standard_PID",
+      "request": "012E",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "07"
+    },
+    {
+      "id": "47",
+      "name": "fuel_level",
+      "request": "012F",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "48",
+      "name": "warmups_since_clear",
+      "request": "0130",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "16"
+    },
+    {
+      "id": "49",
+      "name": "distance_since_clear",
+      "request": "0131",
+      "status": "CONFLICTING",
+      "success_count": "0",
+      "fail_count": "3",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "50",
+      "name": "standard_PID",
+      "request": "0132",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "51",
+      "name": "barometric_pressure",
+      "request": "0133",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "64"
+    },
+    {
+      "id": "52",
+      "name": "standard_PID",
+      "request": "0134",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "53",
+      "name": "standard_PID",
+      "request": "0135",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "54",
+      "name": "standard_PID",
+      "request": "0136",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "55",
+      "name": "standard_PID",
+      "request": "0137",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "56",
+      "name": "standard_PID",
+      "request": "0138",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "57",
+      "name": "standard_PID",
+      "request": "0139",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "58",
+      "name": "standard_PID",
+      "request": "013A",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "59",
+      "name": "standard_PID",
+      "request": "013B",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "60",
+      "name": "catalyst_temperature",
+      "request": "013C",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "1993"
+    },
+    {
+      "id": "61",
+      "name": "standard_PID",
+      "request": "013D",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "62",
+      "name": "standard_PID",
+      "request": "013E",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "16AE"
+    },
+    {
+      "id": "63",
+      "name": "standard_PID",
+      "request": "013F",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "65",
+      "name": "standard_PID",
+      "request": "0141",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "4",
+      "last": "0007E1A1"
+    },
+    {
+      "id": "66",
+      "name": "ECU_voltage",
+      "request": "0142",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "37C2"
+    },
+    {
+      "id": "67",
+      "name": "standard_PID",
+      "request": "0143",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "003A"
+    },
+    {
+      "id": "68",
+      "name": "standard_PID",
+      "request": "0144",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "7FC0"
+    },
+    {
+      "id": "69",
+      "name": "standard_PID",
+      "request": "0145",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "0A"
+    },
+    {
+      "id": "70",
+      "name": "ambient_temperature",
+      "request": "0146",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "3D"
+    },
+    {
+      "id": "71",
+      "name": "standard_PID",
+      "request": "0147",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "21"
+    },
+    {
+      "id": "72",
+      "name": "standard_PID",
+      "request": "0148",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "73",
+      "name": "standard_PID",
+      "request": "0149",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "25"
+    },
+    {
+      "id": "74",
+      "name": "standard_PID",
+      "request": "014A",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "25"
+    },
+    {
+      "id": "75",
+      "name": "standard_PID",
+      "request": "014B",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "76",
+      "name": "standard_PID",
+      "request": "014C",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "0D"
+    },
+    {
+      "id": "77",
+      "name": "standard_PID",
+      "request": "014D",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "0000"
+    },
+    {
+      "id": "78",
+      "name": "standard_PID",
+      "request": "014E",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "01C4"
+    },
+    {
+      "id": "79",
+      "name": "standard_PID",
+      "request": "014F",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "80",
+      "name": "standard_PID",
+      "request": "0150",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "81",
+      "name": "standard_PID",
+      "request": "0151",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "82",
+      "name": "standard_PID",
+      "request": "0152",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "83",
+      "name": "standard_PID",
+      "request": "0153",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "84",
+      "name": "standard_PID",
+      "request": "0154",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "85",
+      "name": "standard_PID",
+      "request": "0155",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "76"
+    },
+    {
+      "id": "86",
+      "name": "standard_PID",
+      "request": "0156",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "7D"
+    },
+    {
+      "id": "87",
+      "name": "standard_PID",
+      "request": "0157",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "88",
+      "name": "standard_PID",
+      "request": "0158",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "89",
+      "name": "standard_PID",
+      "request": "0159",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "90",
+      "name": "standard_PID",
+      "request": "015A",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "91",
+      "name": "standard_PID",
+      "request": "015B",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "92",
+      "name": "oil_temperature",
+      "request": "015C",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "93",
+      "name": "standard_PID",
+      "request": "015D",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "94",
+      "name": "fuel_rate",
+      "request": "015E",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "95",
+      "name": "standard_PID",
+      "request": "015F",
+      "status": "NOT_ADVERTISED",
+      "success_count": "0",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "256",
+      "name": "supported_PIDs",
+      "request": "0100",
+      "status": "SUCCESS",
+      "success_count": "1",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "4",
+      "last": "BE3EB813"
+    },
+    {
+      "id": "257",
+      "name": "supported_PIDs",
+      "request": "0120",
+      "status": "SUCCESS",
+      "success_count": "1",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "4",
+      "last": "8005A015"
+    },
+    {
+      "id": "258",
+      "name": "supported_PIDs",
+      "request": "0140",
+      "status": "SUCCESS",
+      "success_count": "1",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "4",
+      "last": "FEDC0C00"
+    },
+    {
+      "id": "264",
+      "name": "confirmed_fault_codes",
+      "request": "03",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "00"
+    },
+    {
+      "id": "265",
+      "name": "pending_fault_codes",
+      "request": "07",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "00"
+    },
+    {
+      "id": "266",
+      "name": "permanent_fault_codes",
+      "request": "0A",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "1",
+      "last": "00"
+    },
+    {
+      "id": "267",
+      "name": "VIN",
+      "request": "0902",
+      "status": "FORMAT_ERROR",
+      "success_count": "0",
+      "fail_count": "3",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "268",
+      "name": "adapter_voltage",
+      "request": "ATRV",
+      "status": "SUCCESS",
+      "success_count": "4",
+      "fail_count": "0",
+      "quarantined": "0",
+      "bytes": "2",
+      "last": "3520"
+    },
+    {
+      "id": "269",
+      "name": "transmission_21A0",
+      "request": "21A0",
+      "status": "FORMAT_ERROR",
+      "success_count": "0",
+      "fail_count": "5",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "270",
+      "name": "actual_gear_21A1",
+      "request": "21A1",
+      "status": "FORMAT_ERROR",
+      "success_count": "0",
+      "fail_count": "5",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "271",
+      "name": "selector_gear_ATF",
+      "request": "2201A0",
+      "status": "ECU_REJECTED",
+      "success_count": "0",
+      "fail_count": "5",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "272",
+      "name": "gear_alternative",
+      "request": "2201A4",
+      "status": "ECU_REJECTED",
+      "success_count": "0",
+      "fail_count": "5",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "273",
+      "name": "engine_ATF_candidate",
+      "request": "21A0",
+      "status": "ECU_REJECTED",
+      "success_count": "0",
+      "fail_count": "5",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "274",
+      "name": "brake_belts_doors",
+      "request": "22BC03",
+      "status": "NO_DATA",
+      "success_count": "0",
+      "fail_count": "4",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "275",
+      "name": "reverse_rear_belts",
+      "request": "22BC04",
+      "status": "NO_DATA",
+      "success_count": "0",
+      "fail_count": "4",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "276",
+      "name": "light_switch",
+      "request": "22BC05",
+      "status": "NO_DATA",
+      "success_count": "0",
+      "fail_count": "4",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "277",
+      "name": "brake_lights",
+      "request": "22BC06",
+      "status": "NO_DATA",
+      "success_count": "0",
+      "fail_count": "4",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "278",
+      "name": "turn_indicators",
+      "request": "22BC08",
+      "status": "NO_DATA",
+      "success_count": "0",
+      "fail_count": "4",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "279",
+      "name": "headlights",
+      "request": "22BC09",
+      "status": "NO_DATA",
+      "success_count": "0",
+      "fail_count": "4",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "280",
+      "name": "engine_oil_candidate",
+      "request": "2101",
+      "status": "FORMAT_ERROR",
+      "success_count": "0",
+      "fail_count": "4",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "281",
+      "name": "odometer_fuel_cluster",
+      "request": "22B002",
+      "status": "NO_DATA",
+      "success_count": "0",
+      "fail_count": "4",
+      "quarantined": "0",
+      "bytes": "0"
+    },
+    {
+      "id": "282",
+      "name": "engine_odometer",
+      "request": "2103",
+      "status": "FORMAT_ERROR",
+      "success_count": "0",
+      "fail_count": "4",
+      "quarantined": "0",
+      "bytes": "0"
+    }
+  ],
+  "recovered_multiline": [
+    {
+      "seq": 177448,
+      "ms": 83118,
+      "command": "0902",
+      "header": "7DF",
+      "nearest_prior_speed_kmh": 1,
+      "response": "014\r0:490201FFFFFF\r1:FFFFFFFFFFFFFF\r2:FFFFFFFFFFFFFF\r\r>",
+      "response_ms": 96,
+      "payload": "01FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "declared": 20,
+      "padding": ""
+    },
+    {
+      "seq": 177493,
+      "ms": 85791,
+      "command": "21A0",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 1,
+      "response": "01E\r0:61A0FFBF0000\r1:0D5001000002F7\r2:00D5480DAC1259\r3:00490A0E00FFF1\r4:C0C100AAAAAAAA\r\r>",
+      "response_ms": 126,
+      "payload": "FFBF00000D5001000002F700D5480DAC125900490A0E00FFF1C0C100",
+      "declared": 30,
+      "padding": "AAAAAAAA",
+      "candidate_fields": {
+        "speed_raw": 1,
+        "ATF_raw": 72,
+        "gear_candidate_raw": 14,
+        "commanded_candidate_raw": 0,
+        "rpm_candidate": 852.0
+      }
+    },
+    {
+      "seq": 177520,
+      "ms": 87351,
+      "command": "21A1",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 1,
+      "response": "034\r0:61A10C0F0009\r1:00000000010100\r2:0000000000A600\r3:06060000000000\r4:00000000000000\r5:07000010000000\r6:00000000000000\r7:00000000AAAAAA\r\r>",
+      "response_ms": 97,
+      "payload": "0C0F0009000000000101000000000000A6000606000000000000000000000000070000100000000000000000000000000000",
+      "declared": 52,
+      "padding": "AAAAAA",
+      "candidate_fields": {
+        "gear_candidate_raw": 0
+      }
+    },
+    {
+      "seq": 177781,
+      "ms": 103011,
+      "command": "2101",
+      "header": "7E0",
+      "nearest_prior_speed_kmh": 6,
+      "response": "028\r0:61019FB70E00\r1:D1D14748155700\r2:00000029025645\r3:802B1C0000C801\r4:84F2015C01007C\r5:02656C64FE7F00\r\r>",
+      "response_ms": 125,
+      "payload": "9FB70E00D1D1474815570000000029025645802B1C0000C80184F2015C01007C02656C64FE7F",
+      "declared": 40,
+      "padding": "00",
+      "candidate_fields": {
+        "oil_temp_candidate_C": 33.0
+      }
+    },
+    {
+      "seq": 177833,
+      "ms": 106331,
+      "command": "2103",
+      "header": "7E0",
+      "nearest_prior_speed_kmh": 5,
+      "response": "00B\r0:61031F000000\r1:F5FFF2F0F50000\r\r>",
+      "response_ms": 99,
+      "payload": "1F000000F5FFF2F0F5",
+      "declared": 11,
+      "padding": "0000",
+      "candidate_fields": {
+        "odometer_offset57_available": false
+      }
+    },
+    {
+      "seq": 178487,
+      "ms": 146931,
+      "command": "21A0",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 0,
+      "response": "01E\r0:61A0FFBF0000\r1:0D8C0000000C65\r2:00004A00000927\r3:00350B0000FFF0\r4:C0D000AAAAAAAA\r\r>",
+      "response_ms": 96,
+      "payload": "FFBF00000D8C0000000C6500004A0000092700350B0000FFF0C0D000",
+      "declared": 30,
+      "padding": "AAAAAAAA",
+      "candidate_fields": {
+        "speed_raw": 0,
+        "ATF_raw": 74,
+        "gear_candidate_raw": 0,
+        "commanded_candidate_raw": 0,
+        "rpm_candidate": 867.0
+      }
+    },
+    {
+      "seq": 178533,
+      "ms": 149701,
+      "command": "21A1",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 0,
+      "response": "034\r0:61A10C0F0009\r1:00000000010000\r2:0000000000C416\r3:C40E0000000000\r4:00000000000000\r5:C2000010000000\r6:00000000000000\r7:00000000AAAAAA\r\r>",
+      "response_ms": 113,
+      "payload": "0C0F0009000000000100000000000000C416C40E000000000000000000000000C20000100000000000000000000000000000",
+      "declared": 52,
+      "padding": "AAAAAA",
+      "candidate_fields": {
+        "gear_candidate_raw": 0
+      }
+    },
+    {
+      "seq": 178991,
+      "ms": 177771,
+      "command": "2101",
+      "header": "7E0",
+      "nearest_prior_speed_kmh": 1,
+      "response": "028\r0:61019FB70E00\r1:CFCE4710104F00\r2:0000000002913F\r3:80251700006D01\r4:92F4015C01006E\r5:02677464FE7F00\r\r>",
+      "response_ms": 75,
+      "payload": "9FB70E00CFCE4710104F000000000002913F80251700006D0192F4015C01006E02677464FE7F",
+      "declared": 40,
+      "padding": "00",
+      "candidate_fields": {
+        "oil_temp_candidate_C": 39.0
+      }
+    },
+    {
+      "seq": 179091,
+      "ms": 183511,
+      "command": "2103",
+      "header": "7E0",
+      "nearest_prior_speed_kmh": 11,
+      "response": "00B\r0:61031F000000\r1:F5FFF2F0F50000\r\r>",
+      "response_ms": 95,
+      "payload": "1F000000F5FFF2F0F5",
+      "declared": 11,
+      "padding": "0000",
+      "candidate_fields": {
+        "odometer_offset57_available": false
+      }
+    },
+    {
+      "seq": 179479,
+      "ms": 207741,
+      "command": "21A0",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 16,
+      "response": "01E\r0:61A0FFBF0000\r1:11FC0F00001150\r2:06B54B0A0F08AC\r3:002A080202FFF1\r4:C0C000AAAAAAAA\r\r>",
+      "response_ms": 104,
+      "payload": "FFBF000011FC0F0000115006B54B0A0F08AC002A080202FFF1C0C000",
+      "declared": 30,
+      "padding": "AAAAAAAA",
+      "candidate_fields": {
+        "speed_raw": 15,
+        "ATF_raw": 75,
+        "gear_candidate_raw": 2,
+        "commanded_candidate_raw": 2,
+        "rpm_candidate": 1151.0
+      }
+    },
+    {
+      "seq": 179501,
+      "ms": 208981,
+      "command": "0902",
+      "header": "7DF",
+      "nearest_prior_speed_kmh": 15,
+      "response": "014\r0:490201FFFFFF\r1:FFFFFFFFFFFFFF\r2:FFFFFFFFFFFFFF\r\r>",
+      "response_ms": 97,
+      "payload": "01FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "declared": 20,
+      "padding": ""
+    },
+    {
+      "seq": 179523,
+      "ms": 210231,
+      "command": "21A1",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 15,
+      "response": "034\r0:61A10C0F0009\r1:00000000000000\r2:00000000000695\r3:A8A80000000000\r4:00000000000000\r5:7C000010000000\r6:00000045000000\r7:00000000AAAAAA\r\r>",
+      "response_ms": 126,
+      "payload": "0C0F00090000000000000000000000000695A8A80000000000000000000000007C0000100000000000004500000000000000",
+      "declared": 52,
+      "padding": "AAAAAA",
+      "candidate_fields": {
+        "gear_candidate_raw": 0
+      }
+    },
+    {
+      "seq": 179988,
+      "ms": 238591,
+      "command": "2101",
+      "header": "7E0",
+      "nearest_prior_speed_kmh": 27,
+      "response": "028\r0:61019FB70E00\r1:CFCF4790167300\r2:0000000C023040\r3:80291B00002F01\r4:9EF2015C01006D\r5:02677964FE7F00\r\r>",
+      "response_ms": 139,
+      "payload": "9FB70E00CFCF47901673000000000C02304080291B00002F019EF2015C01006D02677964FE7F",
+      "declared": 40,
+      "padding": "00",
+      "candidate_fields": {
+        "oil_temp_candidate_C": 42.75
+      }
+    },
+    {
+      "seq": 180092,
+      "ms": 244691,
+      "command": "2103",
+      "header": "7E0",
+      "nearest_prior_speed_kmh": 15,
+      "response": "00B\r0:61031F000000\r1:F5FFF2F0F50000\r\r>",
+      "response_ms": 97,
+      "payload": "1F000000F5FFF2F0F5",
+      "declared": 11,
+      "padding": "0000",
+      "candidate_fields": {
+        "odometer_offset57_available": false
+      }
+    },
+    {
+      "seq": 180484,
+      "ms": 269021,
+      "command": "21A0",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 18,
+      "response": "01E\r0:61A0FFBF0000\r1:19E014162717B4\r2:09344D0A0F0A2C\r3:0062080202FFF0\r4:C0C000AAAAAAAA\r\r>",
+      "response_ms": 98,
+      "payload": "FFBF000019E014162717B409344D0A0F0A2C0062080202FFF0C0C000",
+      "declared": 30,
+      "padding": "AAAAAAAA",
+      "candidate_fields": {
+        "speed_raw": 20,
+        "ATF_raw": 77,
+        "gear_candidate_raw": 2,
+        "commanded_candidate_raw": 2,
+        "rpm_candidate": 1656.0
+      }
+    },
+    {
+      "seq": 180531,
+      "ms": 271791,
+      "command": "21A1",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 23,
+      "response": "034\r0:61A10C0F0009\r1:00000000000100\r2:0000000000085B\r3:7CA30000000000\r4:00000000000000\r5:16000010000000\r6:00000044000000\r7:00000000AAAAAA\r\r>",
+      "response_ms": 97,
+      "payload": "0C0F0009000000000001000000000000085B7CA3000000000000000000000000160000100000000000004400000000000000",
+      "declared": 52,
+      "padding": "AAAAAA",
+      "candidate_fields": {
+        "gear_candidate_raw": 0
+      }
+    },
+    {
+      "seq": 180983,
+      "ms": 299431,
+      "command": "2101",
+      "header": "7E0",
+      "nearest_prior_speed_kmh": 27,
+      "response": "028\r0:61019FB70E00\r1:CFCF474C105A00\r2:00000011019E21\r3:C0210C0000FF00\r4:AAF4015C010073\r5:02668064FE7F00\r\r>",
+      "response_ms": 98,
+      "payload": "9FB70E00CFCF474C105A0000000011019E21C0210C0000FF00AAF4015C01007302668064FE7F",
+      "declared": 40,
+      "padding": "00",
+      "candidate_fields": {
+        "oil_temp_candidate_C": 48.0
+      }
+    },
+    {
+      "seq": 181096,
+      "ms": 305901,
+      "command": "2103",
+      "header": "7E0",
+      "nearest_prior_speed_kmh": 14,
+      "response": "00B\r0:61031F000000\r1:F5FFF2F0F50000\r\r>",
+      "response_ms": 95,
+      "payload": "1F000000F5FFF2F0F5",
+      "declared": 11,
+      "padding": "0000",
+      "candidate_fields": {
+        "odometer_offset57_available": false
+      }
+    },
+    {
+      "seq": 181494,
+      "ms": 330611,
+      "command": "21A0",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 0,
+      "response": "01E\r0:61A0FFBF0000\r1:0A6C0000000000\r2:00004E0000126C\r3:003F090000FFF1\r4:C0D400AAAAAAAA\r\r>",
+      "response_ms": 101,
+      "payload": "FFBF00000A6C000000000000004E0000126C003F090000FFF1C0D400",
+      "declared": 30,
+      "padding": "AAAAAAAA",
+      "candidate_fields": {
+        "speed_raw": 0,
+        "ATF_raw": 78,
+        "gear_candidate_raw": 0,
+        "commanded_candidate_raw": 0,
+        "rpm_candidate": 667.0
+      }
+    },
+    {
+      "seq": 181537,
+      "ms": 333061,
+      "command": "21A1",
+      "header": "7E1",
+      "nearest_prior_speed_kmh": 0,
+      "response": "034\r0:61A10C0F0009\r1:00000000010100\r2:00000000009502\r3:6D000000000000\r4:00000000000000\r5:00000010000000\r6:00000000000000\r7:00000000AAAAAA\r\r>",
+      "response_ms": 101,
+      "payload": "0C0F000900000000010100000000000095026D00000000000000000000000000000000100000000000000000000000000000",
+      "declared": 52,
+      "padding": "AAAAAA",
+      "candidate_fields": {
+        "gear_candidate_raw": 0
+      }
+    },
+    {
+      "seq": 181704,
+      "ms": 342981,
+      "command": "0902",
+      "header": "7DF",
+      "nearest_prior_speed_kmh": 0,
+      "response": "014\r0:490201FFFFFF\r1:FFFFFFFFFFFFFF\r2:FFFFFFFFFFFFFF\r\r>",
+      "response_ms": 97,
+      "payload": "01FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "declared": 20,
+      "padding": ""
+    }
+  ]
+}

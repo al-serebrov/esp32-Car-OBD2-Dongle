@@ -1,0 +1,90 @@
+Initial serial reset noise omitted.
+
+I (29) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (29) boot: compile time Oct 26 2026 21:21:18
+I (29) boot: Multicore bootloader
+I (31) boot: chip revision: v3.1
+I (33) boot.esp32: SPI Speed      : 40MHz
+I (37) boot.esp32: SPI Mode       : DIO
+I (41) boot.esp32: SPI Flash Size : 4MB
+I (44) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (51) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00200000
+I (77) boot:  3 fieldlog         Unknown data     01 40 00210000 001f0000
+I (84) boot: End of partition table
+I (87) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ef70h (126832) map
+I (138) esp_image: segment 1: paddr=0002ef98 vaddr=3ff80000 size=00020h (    32) load
+I (138) esp_image: segment 2: paddr=0002efc0 vaddr=3ffbdb60 size=01058h (  4184) load
+I (143) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=71678h (464504) map
+I (308) esp_image: segment 4: paddr=000a16a0 vaddr=3ffbebb8 size=03ad0h ( 15056) load
+I (314) esp_image: segment 5: paddr=000a5178 vaddr=40080000 size=1a198h (106904) load
+I (368) boot: Loaded app from partition at offset 0x10000
+I (368) boot: Disabling RNG early entropy source...
+I (379) cpu_start: Multicore app
+I (387) cpu_start: Pro cpu start user code
+I (387) cpu_start: cpu freq: 160000000 Hz
+I (387) app_init: Application information:
+I (387) app_init: Project name:     CAR_OBD
+I (391) app_init: App version:      0.2.1
+I (395) app_init: Compile time:     Oct 27 2026 09:31:09
+I (400) app_init: ELF file SHA256:  1d315af1c...
+I (404) app_init: ESP-IDF:          5.5.0
+I (408) efuse_init: Min chip rev:     v0.0
+I (412) efuse_init: Max chip rev:     v3.99 
+I (416) efuse_init: Chip rev:         v3.1
+I (420) heap_init: Initializing. RAM available for dynamic allocation:
+I (426) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
+I (431) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
+I (436) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
+I (442) heap_init: At 3FFC8810 len 000177F0 (93 KiB): DRAM
+I (447) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (458) heap_init: At 4009A198 len 00005E68 (23 KiB): IRAM
+I (464) spi_flash: detected chip: boya
+I (466) spi_flash: flash io: dio
+I (470) coexist: coex firmware version: 831ec70
+I (474) main_task: Started on CPU0
+I (484) main_task: Calling app_main()
+LOG BOOT version=0.2.1 elf=1d315af1 reset_reason=1 target=V-LINK poll_ms=250 stale_ms=1500
+LOG HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+I (2874) gc9a01: LCD panel create success, version: 2.0.4
+I (2994) display: GC9A01 configured: 240x240, SPI=20000000 Hz, CS=25 (write-only, no panel detection)
+I (3994) BTDM_INIT: BT controller compile version [b992c7d]
+I (3994) BTDM_INIT: Bluetooth MAC: 84:1f:e8:68:17:92
+I (4004) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07
+LOG BT_INIT target=V-LINK legacy PIN configured; device discovery each boot
+LOG UI_MODE DEMO; USB commands: logs, help
+LOG BT_SPP_INIT status=0
+LOG BT_SCAN_START duration_units=8 target=V-LINK
+LOG BT_DISCOVERY state=started
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-62 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-60 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-61 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-64 name="BlueTooth Printer"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-62 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-66 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+LOG DISCOVER mac=1C:79:2D:51:08:FB rssi=-84 name="DIGI R2A"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-62 name="BlueTooth Printer"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-62 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-64 name="BlueTooth Printer"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-64 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-61 name="BlueTooth Printer"
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-66 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+LOG HEALTH mode=DEMO shown_kmh=120 max_draw_us=24281 heap=50080 largest=47104 stack=1048
+LOG DISCOVER mac=E4:70:B8:42:6B:38 rssi=-61 name="alex-ThinkPad-T470p"
+LOG DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+LOG BT_DISCOVERY state=stopped
+LOG BT_RETRY reason=V-LINK not found delay_ms=3000
+LOG BT_SCAN_START duration_units=8 target=V-LINK
+LOG BT_DISCOVERY state=started

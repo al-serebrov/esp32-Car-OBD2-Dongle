@@ -1,0 +1,2 @@
+DRIVING_SCHEDULER speed_samples=274 RPM=40 load=40 throttle=40 gear=39 max_gap_ms=790
+PASS: driver-confirmed P/R/N/D, routed page polling/exit, fresh/missing data, driving redraws, hollow 40-75% MIL layer

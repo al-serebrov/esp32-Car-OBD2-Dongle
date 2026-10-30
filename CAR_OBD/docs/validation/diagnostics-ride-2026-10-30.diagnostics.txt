@@ -1,0 +1,118 @@
+DIAG_REPORT_BEGIN version=1 session=1 active_ms=317057 sweep_complete=1
+DIAG_TRIP source=local_OBD_speed distance_m=760 valid_speed_ms=316892 gaps=0 max_kmh=39 average_kmh=8.64 dashboard_trip_AB=unknown
+DIAG_ITEM id=1 name=ECU_errors request=0101 status=SUCCESS success_count=5 fail_count=0 quarantined=0 bytes=4 last=00000000
+DIAG_ITEM id=2 name=freeze_frame_DTC request=0102 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=3 name=fuel_system_status request=0103 status=SUCCESS success_count=5 fail_count=0 quarantined=0 bytes=2 last=0200
+DIAG_ITEM id=4 name=engine_load request=0104 status=SUCCESS success_count=5 fail_count=0 quarantined=0 bytes=1 last=96
+DIAG_ITEM id=5 name=coolant_temperature request=0105 status=SUCCESS success_count=5 fail_count=0 quarantined=0 bytes=1 last=77
+DIAG_ITEM id=6 name=short_fuel_trim_B1 request=0106 status=SUCCESS success_count=5 fail_count=0 quarantined=0 bytes=1 last=80
+DIAG_ITEM id=7 name=long_fuel_trim_B1 request=0107 status=SUCCESS success_count=5 fail_count=0 quarantined=0 bytes=1 last=6F
+DIAG_ITEM id=8 name=standard_PID request=0108 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=9 name=standard_PID request=0109 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=10 name=fuel_pressure request=010A status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=11 name=intake_pressure request=010B status=SUCCESS success_count=5 fail_count=0 quarantined=0 bytes=1 last=3A
+DIAG_ITEM id=12 name=engine_RPM request=010C status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=0D24
+DIAG_ITEM id=13 name=speed request=010D status=SUCCESS success_count=1 fail_count=0 quarantined=0 bytes=1 last=00
+DIAG_ITEM id=14 name=ignition_timing request=010E status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=9B
+DIAG_ITEM id=15 name=intake_temperature request=010F status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=46
+DIAG_ITEM id=16 name=air_flow request=0110 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=17 name=throttle request=0111 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=2E
+DIAG_ITEM id=18 name=standard_PID request=0112 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=19 name=oxygen_sensors_present request=0113 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=03
+DIAG_ITEM id=20 name=oxygen_sensor_1 request=0114 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=1D82
+DIAG_ITEM id=21 name=oxygen_sensor_2 request=0115 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=9DFF
+DIAG_ITEM id=22 name=standard_PID request=0116 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=23 name=standard_PID request=0117 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=24 name=standard_PID request=0118 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=25 name=standard_PID request=0119 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=26 name=standard_PID request=011A status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=27 name=standard_PID request=011B status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=28 name=OBD_standard request=011C status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=06
+DIAG_ITEM id=29 name=standard_PID request=011D status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=30 name=standard_PID request=011E status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=31 name=engine_runtime request=011F status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=0117
+DIAG_ITEM id=33 name=distance_with_MIL request=0121 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=0000
+DIAG_ITEM id=34 name=standard_PID request=0122 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=35 name=fuel_rail_pressure request=0123 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=36 name=standard_PID request=0124 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=37 name=standard_PID request=0125 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=38 name=standard_PID request=0126 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=39 name=standard_PID request=0127 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=40 name=standard_PID request=0128 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=41 name=standard_PID request=0129 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=42 name=standard_PID request=012A status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=43 name=standard_PID request=012B status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=44 name=standard_PID request=012C status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=45 name=standard_PID request=012D status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=46 name=standard_PID request=012E status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=07
+DIAG_ITEM id=47 name=fuel_level request=012F status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=48 name=warmups_since_clear request=0130 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=16
+DIAG_ITEM id=49 name=distance_since_clear request=0131 status=CONFLICTING success_count=0 fail_count=3 quarantined=0 bytes=0
+DIAG_ITEM id=50 name=standard_PID request=0132 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=51 name=barometric_pressure request=0133 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=64
+DIAG_ITEM id=52 name=standard_PID request=0134 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=53 name=standard_PID request=0135 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=54 name=standard_PID request=0136 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=55 name=standard_PID request=0137 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=56 name=standard_PID request=0138 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=57 name=standard_PID request=0139 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=58 name=standard_PID request=013A status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=59 name=standard_PID request=013B status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=60 name=catalyst_temperature request=013C status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=1993
+DIAG_ITEM id=61 name=standard_PID request=013D status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=62 name=standard_PID request=013E status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=16AE
+DIAG_ITEM id=63 name=standard_PID request=013F status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=65 name=standard_PID request=0141 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=4 last=0007E1A1
+DIAG_ITEM id=66 name=ECU_voltage request=0142 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=37C2
+DIAG_ITEM id=67 name=standard_PID request=0143 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=003A
+DIAG_ITEM id=68 name=standard_PID request=0144 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=7FC0
+DIAG_ITEM id=69 name=standard_PID request=0145 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=0A
+DIAG_ITEM id=70 name=ambient_temperature request=0146 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=3D
+DIAG_ITEM id=71 name=standard_PID request=0147 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=21
+DIAG_ITEM id=72 name=standard_PID request=0148 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=73 name=standard_PID request=0149 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=25
+DIAG_ITEM id=74 name=standard_PID request=014A status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=25
+DIAG_ITEM id=75 name=standard_PID request=014B status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=76 name=standard_PID request=014C status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=0D
+DIAG_ITEM id=77 name=standard_PID request=014D status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=0000
+DIAG_ITEM id=78 name=standard_PID request=014E status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=01C4
+DIAG_ITEM id=79 name=standard_PID request=014F status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=80 name=standard_PID request=0150 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=81 name=standard_PID request=0151 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=82 name=standard_PID request=0152 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=83 name=standard_PID request=0153 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=84 name=standard_PID request=0154 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=85 name=standard_PID request=0155 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=76
+DIAG_ITEM id=86 name=standard_PID request=0156 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=7D
+DIAG_ITEM id=87 name=standard_PID request=0157 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=88 name=standard_PID request=0158 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=89 name=standard_PID request=0159 status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=90 name=standard_PID request=015A status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=91 name=standard_PID request=015B status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=92 name=oil_temperature request=015C status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=93 name=standard_PID request=015D status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=94 name=fuel_rate request=015E status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=95 name=standard_PID request=015F status=NOT_ADVERTISED success_count=0 fail_count=0 quarantined=0 bytes=0
+DIAG_ITEM id=256 name=supported_PIDs request=0100 status=SUCCESS success_count=1 fail_count=0 quarantined=0 bytes=4 last=BE3EB813
+DIAG_ITEM id=257 name=supported_PIDs request=0120 status=SUCCESS success_count=1 fail_count=0 quarantined=0 bytes=4 last=8005A015
+DIAG_ITEM id=258 name=supported_PIDs request=0140 status=SUCCESS success_count=1 fail_count=0 quarantined=0 bytes=4 last=FEDC0C00
+DIAG_ITEM id=264 name=confirmed_fault_codes request=03 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=00
+DIAG_ITEM id=265 name=pending_fault_codes request=07 status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=00
+DIAG_ITEM id=266 name=permanent_fault_codes request=0A status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=1 last=00
+DIAG_ITEM id=267 name=VIN request=0902 status=FORMAT_ERROR success_count=0 fail_count=3 quarantined=0 bytes=0
+DIAG_ITEM id=268 name=adapter_voltage request=ATRV status=SUCCESS success_count=4 fail_count=0 quarantined=0 bytes=2 last=3520
+DIAG_ITEM id=269 name=transmission_21A0 request=21A0 status=FORMAT_ERROR success_count=0 fail_count=5 quarantined=0 bytes=0
+DIAG_ITEM id=270 name=actual_gear_21A1 request=21A1 status=FORMAT_ERROR success_count=0 fail_count=5 quarantined=0 bytes=0
+DIAG_ITEM id=271 name=selector_gear_ATF request=2201A0 status=ECU_REJECTED success_count=0 fail_count=5 quarantined=0 bytes=0
+DIAG_ITEM id=272 name=gear_alternative request=2201A4 status=ECU_REJECTED success_count=0 fail_count=5 quarantined=0 bytes=0
+DIAG_ITEM id=273 name=engine_ATF_candidate request=21A0 status=ECU_REJECTED success_count=0 fail_count=5 quarantined=0 bytes=0
+DIAG_ITEM id=274 name=brake_belts_doors request=22BC03 status=NO_DATA success_count=0 fail_count=4 quarantined=0 bytes=0
+DIAG_ITEM id=275 name=reverse_rear_belts request=22BC04 status=NO_DATA success_count=0 fail_count=4 quarantined=0 bytes=0
+DIAG_ITEM id=276 name=light_switch request=22BC05 status=NO_DATA success_count=0 fail_count=4 quarantined=0 bytes=0
+DIAG_ITEM id=277 name=brake_lights request=22BC06 status=NO_DATA success_count=0 fail_count=4 quarantined=0 bytes=0
+DIAG_ITEM id=278 name=turn_indicators request=22BC08 status=NO_DATA success_count=0 fail_count=4 quarantined=0 bytes=0
+DIAG_ITEM id=279 name=headlights request=22BC09 status=NO_DATA success_count=0 fail_count=4 quarantined=0 bytes=0
+DIAG_ITEM id=280 name=engine_oil_candidate request=2101 status=FORMAT_ERROR success_count=0 fail_count=4 quarantined=0 bytes=0
+DIAG_ITEM id=281 name=odometer_fuel_cluster request=22B002 status=NO_DATA success_count=0 fail_count=4 quarantined=0 bytes=0
+DIAG_ITEM id=282 name=engine_odometer request=2103 status=FORMAT_ERROR success_count=0 fail_count=4 quarantined=0 bytes=0
+DIAG_REPORT_END

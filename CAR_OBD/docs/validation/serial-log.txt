@@ -1,0 +1,74 @@
+24-second serial capture; initial reset line noise omitted.
+Captured after SPI wake-up fix, before horizontal orientation adjustment.
+
+I (29) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (29) boot: compile time Oct 26 2026 19:47:08
+I (29) boot: Multicore bootloader
+I (31) boot: chip revision: v3.1
+I (33) boot.esp32: SPI Speed      : 40MHz
+I (37) boot.esp32: SPI Mode       : DIO
+I (41) boot.esp32: SPI Flash Size : 4MB
+I (44) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (51) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00100000
+I (77) boot: End of partition table
+I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d3ech ( 54252) map
+I (106) esp_image: segment 1: paddr=0001d414 vaddr=3ff80000 size=00020h (    32) load
+I (107) esp_image: segment 2: paddr=0001d43c vaddr=3ffb0000 size=026c8h (  9928) load
+I (114) esp_image: segment 3: paddr=0001fb0c vaddr=40080000 size=0050ch (  1292) load
+I (118) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1c9e0h (117216) map
+I (165) esp_image: segment 5: paddr=0003ca08 vaddr=4008050c size=0f014h ( 61460) load
+I (197) boot: Loaded app from partition at offset 0x10000
+I (197) boot: Disabling RNG early entropy source...
+I (208) cpu_start: Multicore app
+I (216) cpu_start: Pro cpu start user code
+I (216) cpu_start: cpu freq: 160000000 Hz
+I (216) app_init: Application information:
+I (216) app_init: Project name:     CAR_OBD
+I (220) app_init: App version:      0f2db41-dirty
+I (224) app_init: Compile time:     Oct 26 2026 19:46:21
+I (229) app_init: ELF file SHA256:  b9e675fbb...
+I (234) app_init: ESP-IDF:          5.5.0
+I (238) efuse_init: Min chip rev:     v0.0
+I (241) efuse_init: Max chip rev:     v3.99 
+I (245) efuse_init: Chip rev:         v3.1
+I (249) heap_init: Initializing. RAM available for dynamic allocation:
+I (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (261) heap_init: At 3FFB2FC8 len 0002D038 (180 KiB): DRAM
+I (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (277) heap_init: At 4008F520 len 00010AE0 (66 KiB): IRAM
+I (283) spi_flash: detected chip: boya
+I (285) spi_flash: flash io: dio
+I (289) main_task: Started on CPU0
+I (299) main_task: Calling app_main()
+I (299) speed_demo: Phase 1: ONE GC9A01, SIMULATED speed only. Bluetooth is disabled.
+I (299) speed_demo: Chip model=1 cores=2 revision=301, Classic BT capability=yes
+W (309) speed_demo: Verify module marking, TFT pinout/power/backlight, and fitted flash before use.
+I (319) gc9a01: LCD panel create success, version: 2.0.4
+I (439) display: GC9A01 configured: 240x240, SPI=20000000 Hz, CS=25 (write-only, no panel detection)
+I (2469) speed_demo: DEMO speed=3 km/h, max render+SPI=15572 us, free heap=176720, stack waterline=1800 bytes
+I (3479) speed_demo: DEMO speed=12 km/h, max render+SPI=16773 us, free heap=176720, stack waterline=1800 bytes
+I (4469) speed_demo: DEMO speed=25 km/h, max render+SPI=15360 us, free heap=176720, stack waterline=1800 bytes
+I (5479) speed_demo: DEMO speed=42 km/h, max render+SPI=14291 us, free heap=176720, stack waterline=1800 bytes
+I (6469) speed_demo: DEMO speed=61 km/h, max render+SPI=17386 us, free heap=176720, stack waterline=1800 bytes
+I (7469) speed_demo: DEMO speed=79 km/h, max render+SPI=16901 us, free heap=176720, stack waterline=1800 bytes
+I (8479) speed_demo: DEMO speed=96 km/h, max render+SPI=16184 us, free heap=176720, stack waterline=1800 bytes
+I (9469) speed_demo: DEMO speed=109 km/h, max render+SPI=17249 us, free heap=176720, stack waterline=1800 bytes
+I (10469) speed_demo: DEMO speed=117 km/h, max render+SPI=16317 us, free heap=176720, stack waterline=1800 bytes
+I (11469) speed_demo: DEMO speed=120 km/h, max render+SPI=14605 us, free heap=176720, stack waterline=1800 bytes
+I (12469) speed_demo: DEMO speed=117 km/h, max render+SPI=14394 us, free heap=176720, stack waterline=1800 bytes
+I (13469) speed_demo: DEMO speed=108 km/h, max render+SPI=16425 us, free heap=176720, stack waterline=1800 bytes
+I (14469) speed_demo: DEMO speed=95 km/h, max render+SPI=17158 us, free heap=176720, stack waterline=1800 bytes
+I (15469) speed_demo: DEMO speed=78 km/h, max render+SPI=15600 us, free heap=176720, stack waterline=1800 bytes
+I (16479) speed_demo: DEMO speed=59 km/h, max render+SPI=17286 us, free heap=176720, stack waterline=1800 bytes
+I (17479) speed_demo: DEMO speed=41 km/h, max render+SPI=17299 us, free heap=176720, stack waterline=1800 bytes
+I (18469) speed_demo: DEMO speed=24 km/h, max render+SPI=13795 us, free heap=176720, stack waterline=1800 bytes
+I (19479) speed_demo: DEMO speed=11 km/h, max render+SPI=15908 us, free heap=176720, stack waterline=1800 bytes
+I (20469) speed_demo: DEMO speed=3 km/h, max render+SPI=16671 us, free heap=176720, stack waterline=1800 bytes
+I (21469) speed_demo: DEMO speed=0 km/h, max render+SPI=15430 us, free heap=176720, stack waterline=1800 bytes
+I (22469) speed_demo: DEMO speed=3 km/h, max render+SPI=15568 us, free heap=176720, stack waterline=1800 bytes
+I (23479) speed_demo: DEMO speed=12 km/h, max render+SPI=16773 us, free heap=176720, stack waterline=1800 bytes

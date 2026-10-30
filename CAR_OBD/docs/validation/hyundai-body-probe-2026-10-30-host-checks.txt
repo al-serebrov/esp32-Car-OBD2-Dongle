@@ -1,0 +1,4 @@
+PASS: simulation bounds/endpoints, up/down redraw equivalence, framebuffer guards, dirty tracking
+PASS: button bounce/single/double/hold/boot, theme/page redraw, missing/stale/zero metrics
+PASS: strict PIDs, fragments, speed, detail scheduling, Hyundai body parsing/routing/recovery, stale policy
+PASS: flash rollover, ordered export, reboot retention, CRC, all 256 interrupted writes, interrupted erases

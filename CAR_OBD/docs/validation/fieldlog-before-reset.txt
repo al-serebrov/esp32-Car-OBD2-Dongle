@@ -1,0 +1,463 @@
+LOG_BEGIN version=1 boot=103 newest=461 capacity=7936
+1 boot=1 ms=944 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=1 target=V-LINK poll_ms=250 stale_ms=1500
+2 boot=1 ms=944 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+3 boot=2 ms=944 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+4 boot=2 ms=945 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+5 boot=3 ms=944 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+6 boot=4 ms=944 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+7 boot=5 ms=945 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+8 boot=6 ms=945 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+9 boot=6 ms=945 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+10 boot=7 ms=945 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+11 boot=8 ms=945 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+12 boot=9 ms=946 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+13 boot=9 ms=946 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+14 boot=10 ms=946 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+15 boot=10 ms=947 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+16 boot=11 ms=946 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+17 boot=12 ms=946 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+18 boot=13 ms=947 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+19 boot=13 ms=947 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+20 boot=14 ms=947 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+21 boot=14 ms=948 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+22 boot=15 ms=947 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+23 boot=15 ms=948 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+24 boot=16 ms=948 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+25 boot=16 ms=948 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+26 boot=17 ms=948 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+27 boot=17 ms=949 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+28 boot=18 ms=949 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+29 boot=18 ms=949 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+30 boot=19 ms=949 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+31 boot=19 ms=949 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+32 boot=20 ms=949 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+33 boot=20 ms=950 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+34 boot=21 ms=950 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+35 boot=21 ms=950 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+36 boot=22 ms=950 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+37 boot=22 ms=951 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+38 boot=23 ms=950 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+39 boot=23 ms=951 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+40 boot=24 ms=951 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+41 boot=24 ms=951 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+42 boot=25 ms=951 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+43 boot=25 ms=952 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+44 boot=26 ms=951 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+45 boot=26 ms=952 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+46 boot=27 ms=952 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+47 boot=28 ms=952 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+48 boot=29 ms=952 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+49 boot=30 ms=953 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+50 boot=31 ms=953 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+51 boot=31 ms=953 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+52 boot=32 ms=953 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+53 boot=33 ms=953 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+54 boot=34 ms=953 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+55 boot=35 ms=954 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+56 boot=36 ms=954 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+57 boot=37 ms=954 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=1 target=V-LINK poll_ms=250 stale_ms=1500
+58 boot=37 ms=955 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+59 boot=38 ms=954 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+60 boot=39 ms=955 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+61 boot=40 ms=955 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+62 boot=41 ms=955 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+63 boot=42 ms=955 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+64 boot=43 ms=955 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+65 boot=43 ms=956 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+66 boot=44 ms=956 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+67 boot=44 ms=956 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+68 boot=45 ms=956 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+69 boot=45 ms=957 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+70 boot=46 ms=956 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+71 boot=46 ms=957 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+72 boot=47 ms=957 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+73 boot=47 ms=957 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+74 boot=48 ms=957 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+75 boot=48 ms=958 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+76 boot=49 ms=958 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+77 boot=50 ms=958 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+78 boot=50 ms=958 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+79 boot=51 ms=958 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+80 boot=51 ms=959 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+81 boot=52 ms=958 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+82 boot=52 ms=959 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+83 boot=53 ms=959 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+84 boot=53 ms=959 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+85 boot=54 ms=959 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+86 boot=55 ms=959 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+87 boot=55 ms=960 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+88 boot=56 ms=960 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+89 boot=56 ms=960 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+90 boot=57 ms=960 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+91 boot=57 ms=961 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+92 boot=58 ms=961 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+93 boot=58 ms=961 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+94 boot=59 ms=961 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+95 boot=59 ms=961 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+96 boot=60 ms=961 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+97 boot=60 ms=962 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+98 boot=61 ms=962 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+99 boot=62 ms=962 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+100 boot=63 ms=962 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+101 boot=64 ms=962 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+102 boot=65 ms=962 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+103 boot=66 ms=962 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+104 boot=67 ms=963 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+105 boot=68 ms=963 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+106 boot=69 ms=963 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+107 boot=70 ms=963 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+108 boot=71 ms=963 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+109 boot=71 ms=964 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+110 boot=72 ms=964 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+111 boot=73 ms=964 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+112 boot=74 ms=964 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+113 boot=75 ms=964 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+114 boot=75 ms=965 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+115 boot=76 ms=965 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+116 boot=77 ms=965 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+117 boot=78 ms=965 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+118 boot=79 ms=965 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+119 boot=80 ms=966 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+120 boot=80 ms=966 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+121 boot=81 ms=966 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+122 boot=81 ms=966 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+123 boot=82 ms=966 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+124 boot=83 ms=967 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+125 boot=84 ms=967 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+126 boot=84 ms=967 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+127 boot=85 ms=967 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+128 boot=85 ms=968 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+129 boot=86 ms=967 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+130 boot=86 ms=968 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+131 boot=87 ms=968 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+132 boot=87 ms=968 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+133 boot=88 ms=968 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+134 boot=88 ms=969 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+135 boot=89 ms=969 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+136 boot=90 ms=969 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+137 boot=90 ms=969 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+138 boot=91 ms=969 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+139 boot=91 ms=970 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+140 boot=92 ms=969 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+141 boot=92 ms=970 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+142 boot=93 ms=970 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+143 boot=93 ms=970 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+144 boot=94 ms=970 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+145 boot=94 ms=971 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+146 boot=95 ms=971 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+147 boot=95 ms=971 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+148 boot=96 ms=971 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+149 boot=96 ms=972 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+150 boot=97 ms=971 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+151 boot=98 ms=972 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+152 boot=98 ms=972 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+153 boot=99 ms=972 BOOT version=0.2.0 elf=b7c2d4bd reset_reason=4 target=V-LINK poll_ms=250 stale_ms=1500
+154 boot=100 ms=972 BOOT version=0.2.0 elf=463448e3 reset_reason=1 target=V-LINK poll_ms=250 stale_ms=1500
+155 boot=100 ms=972 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+156 boot=100 ms=2736 BT_INIT target=V-LINK legacy PIN configured; device discovery each boot
+157 boot=100 ms=2742 UI_MODE DEMO; USB commands: logs, help
+158 boot=100 ms=2742 BT_SPP_INIT status=0
+159 boot=100 ms=2744 BT_SCAN_START duration_units=8 target=V-LINK
+160 boot=100 ms=2767 BT_DISCOVERY state=started
+161 boot=100 ms=4540 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+162 boot=100 ms=5352 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="<not advertised>"
+163 boot=100 ms=5502 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="<not advertised>"
+164 boot=100 ms=5622 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="<not advertised>"
+165 boot=100 ms=5922 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="<not advertised>"
+166 boot=100 ms=6282 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="<not advertised>"
+167 boot=100 ms=6642 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="<not advertised>"
+168 boot=100 ms=7101 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-55 name="alex-ThinkPad-T470p"
+169 boot=100 ms=7282 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-55 name="alex-ThinkPad-T470p"
+170 boot=100 ms=7291 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="<not advertised>"
+171 boot=100 ms=7463 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+172 boot=100 ms=7562 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="<not advertised>"
+173 boot=100 ms=7823 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="<not advertised>"
+174 boot=100 ms=10623 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-68 name="<not advertised>"
+175 boot=100 ms=10963 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="<not advertised>"
+176 boot=100 ms=11305 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="<not advertised>"
+177 boot=100 ms=11745 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="<not advertised>"
+178 boot=100 ms=12216 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+179 boot=100 ms=12314 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="<not advertised>"
+180 boot=100 ms=12376 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="<not advertised>"
+181 boot=100 ms=12791 HEALTH mode=DEMO shown_kmh=120 max_draw_us=57264 heap=54300 largest=51200 stack=1048
+182 boot=100 ms=12797 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-54 name="alex-ThinkPad-T470p"
+183 boot=100 ms=12957 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+184 boot=100 ms=14658 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=unknown/0 name="BlueTooth Printer"
+185 boot=100 ms=14658 BT_DISCOVERY state=stopped
+186 boot=100 ms=14658 BT_RETRY reason=V-LINK not found delay_ms=3000
+187 boot=100 ms=14659 BT_DISCOVERY state=stopped
+188 boot=100 ms=17671 BT_SCAN_START duration_units=8 target=V-LINK
+189 boot=100 ms=17678 BT_DISCOVERY state=started
+190 boot=100 ms=20459 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-68 name="BlueTooth Printer"
+191 boot=100 ms=20799 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+192 boot=100 ms=21370 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+193 boot=100 ms=21500 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+194 boot=100 ms=22080 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+195 boot=100 ms=22200 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+196 boot=100 ms=22462 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+197 boot=100 ms=22791 HEALTH mode=DEMO shown_kmh=0 max_draw_us=23107 heap=53984 largest=51200 stack=1048
+198 boot=100 ms=25381 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+199 boot=100 ms=25891 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+200 boot=100 ms=25962 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+201 boot=100 ms=26073 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+202 boot=100 ms=26351 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+203 boot=100 ms=26553 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+204 boot=100 ms=26712 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+205 boot=100 ms=26963 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+206 boot=100 ms=27172 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-64 name="BlueTooth Printer"
+207 boot=100 ms=27586 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-61 name="alex-ThinkPad-T470p"
+208 boot=100 ms=27817 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+209 boot=100 ms=27914 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+210 boot=100 ms=27915 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=unknown/0 name="BlueTooth Printer"
+211 boot=100 ms=27915 BT_DISCOVERY state=stopped
+212 boot=100 ms=27915 BT_RETRY reason=V-LINK not found delay_ms=6000
+213 boot=100 ms=27915 BT_DISCOVERY state=stopped
+214 boot=100 ms=32841 HEALTH mode=DEMO shown_kmh=120 max_draw_us=36755 heap=58340 largest=55296 stack=1048
+215 boot=100 ms=33931 BT_SCAN_START duration_units=8 target=V-LINK
+216 boot=100 ms=33937 BT_DISCOVERY state=started
+217 boot=100 ms=36737 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+218 boot=100 ms=37237 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+219 boot=100 ms=37822 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-60 name="alex-ThinkPad-T470p"
+220 boot=100 ms=37928 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+221 boot=100 ms=38098 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+222 boot=100 ms=38668 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+223 boot=100 ms=41750 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+224 boot=100 ms=42030 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+225 boot=100 ms=42770 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+226 boot=100 ms=42841 HEALTH mode=DEMO shown_kmh=0 max_draw_us=25181 heap=53984 largest=51200 stack=1048
+227 boot=100 ms=42945 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-55 name="alex-ThinkPad-T470p"
+228 boot=100 ms=43100 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+229 boot=100 ms=43231 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+230 boot=100 ms=43296 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+231 boot=100 ms=43607 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-51 name="alex-ThinkPad-T470p"
+232 boot=100 ms=43650 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+233 boot=100 ms=44047 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-55 name="alex-ThinkPad-T470p"
+234 boot=100 ms=44070 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+235 boot=100 ms=44108 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-55 name="alex-ThinkPad-T470p"
+236 boot=100 ms=44185 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=unknown/0 name="BlueTooth Printer"
+237 boot=100 ms=44185 BT_DISCOVERY state=stopped
+238 boot=100 ms=44185 BT_RETRY reason=V-LINK not found delay_ms=12000
+239 boot=100 ms=44185 BT_DISCOVERY state=stopped
+240 boot=101 ms=988 BOOT version=0.2.0 elf=463448e3 reset_reason=1 target=V-LINK poll_ms=250 stale_ms=1500
+241 boot=101 ms=989 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+242 boot=101 ms=2799 BT_INIT target=V-LINK legacy PIN configured; device discovery each boot
+243 boot=101 ms=2805 UI_MODE DEMO; USB commands: logs, help
+244 boot=101 ms=2805 BT_SPP_INIT status=0
+245 boot=101 ms=2806 BT_SCAN_START duration_units=8 target=V-LINK
+246 boot=101 ms=2828 BT_DISCOVERY state=started
+247 boot=101 ms=5248 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+248 boot=101 ms=5750 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+249 boot=101 ms=5781 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+250 boot=101 ms=6490 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-68 name="BlueTooth Printer"
+251 boot=101 ms=6621 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+252 boot=101 ms=7011 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+253 boot=101 ms=7291 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+254 boot=101 ms=7491 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-68 name="BlueTooth Printer"
+255 boot=101 ms=10532 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-61 name="BlueTooth Printer"
+256 boot=101 ms=10792 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-62 name="BlueTooth Printer"
+257 boot=101 ms=11372 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-61 name="BlueTooth Printer"
+258 boot=101 ms=11976 DISCOVER mac=1C:79:2D:51:08:FB rssi=-94 name="<not advertised>"
+259 boot=101 ms=12023 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+260 boot=101 ms=12154 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-62 name="BlueTooth Printer"
+261 boot=101 ms=12643 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+262 boot=101 ms=12733 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-62 name="BlueTooth Printer"
+263 boot=101 ms=12851 HEALTH mode=DEMO shown_kmh=120 max_draw_us=36872 heap=54184 largest=51200 stack=1048
+264 boot=101 ms=14080 DISCOVER mac=1C:79:2D:51:08:FB rssi=unknown/0 name="DIGI R2A"
+265 boot=101 ms=14080 BT_DISCOVERY state=stopped
+266 boot=101 ms=14081 BT_RETRY reason=V-LINK not found delay_ms=3000
+267 boot=101 ms=14081 BT_DISCOVERY state=stopped
+268 boot=101 ms=17081 BT_SCAN_START duration_units=8 target=V-LINK
+269 boot=101 ms=17087 BT_DISCOVERY state=started
+270 boot=101 ms=18046 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-61 name="alex-ThinkPad-T470p"
+271 boot=101 ms=18397 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+272 boot=101 ms=18977 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-60 name="alex-ThinkPad-T470p"
+273 boot=101 ms=19478 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-60 name="alex-ThinkPad-T470p"
+274 boot=101 ms=19559 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+275 boot=101 ms=19687 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+276 boot=101 ms=19750 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+277 boot=101 ms=19800 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+278 boot=101 ms=20111 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+279 boot=101 ms=20117 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+280 boot=101 ms=20242 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+281 boot=101 ms=20617 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+282 boot=101 ms=20702 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+283 boot=101 ms=20927 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+284 boot=101 ms=21193 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+285 boot=101 ms=21557 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+286 boot=101 ms=21604 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+287 boot=101 ms=21947 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+288 boot=101 ms=22095 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+289 boot=101 ms=22851 HEALTH mode=DEMO shown_kmh=0 max_draw_us=24287 heap=53884 largest=51200 stack=1048
+290 boot=101 ms=24827 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+291 boot=101 ms=25040 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+292 boot=101 ms=25248 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-64 name="alex-ThinkPad-T470p"
+293 boot=101 ms=25369 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+294 boot=101 ms=25498 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+295 boot=101 ms=25509 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-61 name="alex-ThinkPad-T470p"
+296 boot=101 ms=26080 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+297 boot=101 ms=26141 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-61 name="alex-ThinkPad-T470p"
+298 boot=101 ms=26291 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+299 boot=101 ms=26570 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+300 boot=101 ms=26632 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-62 name="alex-ThinkPad-T470p"
+301 boot=101 ms=27162 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+302 boot=101 ms=27170 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+303 boot=101 ms=27334 BT_DISCOVERY state=stopped
+304 boot=101 ms=27335 BT_RETRY reason=V-LINK not found delay_ms=6000
+305 boot=101 ms=27335 BT_DISCOVERY state=stopped
+306 boot=101 ms=32851 HEALTH mode=DEMO shown_kmh=120 max_draw_us=25936 heap=58240 largest=55296 stack=1048
+307 boot=101 ms=33351 BT_SCAN_START duration_units=8 target=V-LINK
+308 boot=101 ms=33357 BT_DISCOVERY state=started
+309 boot=101 ms=35337 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+310 boot=101 ms=35668 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+311 boot=101 ms=35778 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+312 boot=101 ms=35839 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+313 boot=101 ms=35919 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+314 boot=101 ms=36105 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+315 boot=101 ms=36805 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-59 name="BlueTooth Printer"
+316 boot=101 ms=37136 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+317 boot=101 ms=37866 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+318 boot=101 ms=38246 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+319 boot=101 ms=40453 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+320 boot=101 ms=41227 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+321 boot=101 ms=41697 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+322 boot=101 ms=41847 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+323 boot=101 ms=42357 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+324 boot=101 ms=42704 DISCOVER mac=1C:79:2D:51:08:FB rssi=-90 name="<not advertised>"
+325 boot=101 ms=42851 HEALTH mode=DEMO shown_kmh=0 max_draw_us=25639 heap=53884 largest=51200 stack=1048
+326 boot=101 ms=42968 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+327 boot=101 ms=43259 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-61 name="BlueTooth Printer"
+328 boot=101 ms=43568 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+329 boot=101 ms=48352 BT_RETRY reason=Bluetooth stage deadline exceeded delay_ms=12000
+330 boot=101 ms=48355 BT_DISCOVERY state=stopped
+331 boot=101 ms=52851 HEALTH mode=DEMO shown_kmh=120 max_draw_us=23118 heap=58240 largest=55296 stack=1048
+332 boot=101 ms=60351 BT_SCAN_START duration_units=8 target=V-LINK
+333 boot=101 ms=60357 BT_DISCOVERY state=started
+334 boot=101 ms=60933 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+335 boot=101 ms=61464 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+336 boot=101 ms=61906 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+337 boot=101 ms=62476 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-55 name="alex-ThinkPad-T470p"
+338 boot=101 ms=62851 HEALTH mode=DEMO shown_kmh=0 max_draw_us=27322 heap=53884 largest=51200 stack=1048
+339 boot=101 ms=62917 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+340 boot=101 ms=63098 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-67 name="BlueTooth Printer"
+341 boot=101 ms=63187 DISCOVER mac=1C:79:2D:51:08:FB rssi=-87 name="DIGI R2A"
+342 boot=101 ms=63478 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+343 boot=101 ms=63769 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+344 boot=101 ms=64519 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+345 boot=101 ms=65189 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+346 boot=101 ms=65439 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+347 boot=101 ms=66069 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-55 name="alex-ThinkPad-T470p"
+348 boot=101 ms=66680 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+349 boot=101 ms=67101 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+350 boot=101 ms=67352 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+351 boot=101 ms=67932 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+352 boot=101 ms=68243 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-55 name="alex-ThinkPad-T470p"
+353 boot=101 ms=68321 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-64 name="BlueTooth Printer"
+354 boot=101 ms=68564 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+355 boot=101 ms=68605 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+356 boot=101 ms=68661 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-64 name="BlueTooth Printer"
+357 boot=101 ms=68716 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-55 name="alex-ThinkPad-T470p"
+358 boot=101 ms=69096 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+359 boot=101 ms=69147 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-63 name="alex-ThinkPad-T470p"
+360 boot=101 ms=69261 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-63 name="BlueTooth Printer"
+361 boot=101 ms=69521 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-62 name="BlueTooth Printer"
+362 boot=101 ms=69578 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-62 name="alex-ThinkPad-T470p"
+363 boot=101 ms=69622 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-63 name="BlueTooth Printer"
+364 boot=101 ms=69818 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+365 boot=101 ms=69829 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-60 name="alex-ThinkPad-T470p"
+366 boot=101 ms=69911 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-63 name="BlueTooth Printer"
+367 boot=101 ms=69990 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+368 boot=101 ms=70022 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-64 name="BlueTooth Printer"
+369 boot=101 ms=70604 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+370 boot=101 ms=70605 BT_DISCOVERY state=stopped
+371 boot=101 ms=70605 BT_RETRY reason=V-LINK not found delay_ms=24000
+372 boot=101 ms=70605 BT_DISCOVERY state=stopped
+373 boot=101 ms=72901 HEALTH mode=DEMO shown_kmh=120 max_draw_us=52406 heap=58240 largest=55296 stack=1048
+374 boot=101 ms=82901 HEALTH mode=DEMO shown_kmh=0 max_draw_us=21346 heap=58240 largest=55296 stack=1048
+375 boot=101 ms=92901 HEALTH mode=DEMO shown_kmh=120 max_draw_us=21470 heap=58240 largest=55296 stack=1048
+376 boot=101 ms=94621 BT_SCAN_START duration_units=8 target=V-LINK
+377 boot=101 ms=94627 BT_DISCOVERY state=started
+378 boot=101 ms=97545 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-62 name="BlueTooth Printer"
+379 boot=101 ms=98295 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-62 name="BlueTooth Printer"
+380 boot=101 ms=98675 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-62 name="BlueTooth Printer"
+381 boot=101 ms=98794 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-60 name="alex-ThinkPad-T470p"
+382 boot=101 ms=99216 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-59 name="BlueTooth Printer"
+383 boot=101 ms=99346 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-59 name="BlueTooth Printer"
+384 boot=101 ms=99425 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+385 boot=101 ms=102647 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+386 boot=101 ms=102698 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+387 boot=101 ms=102901 HEALTH mode=DEMO shown_kmh=0 max_draw_us=23820 heap=53884 largest=51200 stack=1048
+388 boot=101 ms=102977 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+389 boot=101 ms=103637 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+390 boot=101 ms=103908 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-66 name="alex-ThinkPad-T470p"
+391 boot=101 ms=104268 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-58 name="BlueTooth Printer"
+392 boot=101 ms=104308 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-62 name="alex-ThinkPad-T470p"
+393 boot=101 ms=104874 BT_DISCOVERY state=stopped
+394 boot=101 ms=104874 BT_RETRY reason=V-LINK not found delay_ms=30000
+395 boot=101 ms=104875 BT_DISCOVERY state=stopped
+396 boot=101 ms=112951 HEALTH mode=DEMO shown_kmh=120 max_draw_us=24956 heap=58240 largest=55296 stack=1048
+397 boot=102 ms=1017 BOOT version=0.2.0 elf=e57f7955 reset_reason=1 target=V-LINK poll_ms=250 stale_ms=1500
+398 boot=102 ms=1018 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+399 boot=102 ms=2823 BT_INIT target=V-LINK legacy PIN configured; device discovery each boot
+400 boot=102 ms=2828 UI_MODE DEMO; USB commands: logs, help
+401 boot=102 ms=2828 BT_SPP_INIT status=0
+402 boot=102 ms=2829 BT_SCAN_START duration_units=8 target=V-LINK
+403 boot=102 ms=2851 BT_DISCOVERY state=started
+404 boot=102 ms=2957 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+405 boot=102 ms=3419 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-57 name="alex-ThinkPad-T470p"
+406 boot=102 ms=3620 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+407 boot=102 ms=3628 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-59 name="BlueTooth Printer"
+408 boot=102 ms=3848 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+409 boot=102 ms=4111 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+410 boot=102 ms=4451 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-60 name="alex-ThinkPad-T470p"
+411 boot=102 ms=4682 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+412 boot=102 ms=4708 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-61 name="BlueTooth Printer"
+413 boot=102 ms=5148 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-61 name="BlueTooth Printer"
+414 boot=102 ms=5273 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+415 boot=102 ms=8300 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+416 boot=102 ms=8545 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+417 boot=102 ms=8796 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="<not advertised>"
+418 boot=102 ms=8927 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+419 boot=102 ms=8940 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="<not advertised>"
+420 boot=102 ms=9300 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+421 boot=102 ms=9478 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-60 name="alex-ThinkPad-T470p"
+422 boot=102 ms=9638 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-59 name="alex-ThinkPad-T470p"
+423 boot=102 ms=9670 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+424 boot=102 ms=9821 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+425 boot=102 ms=9902 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+426 boot=102 ms=10451 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+427 boot=102 ms=12871 HEALTH mode=DEMO shown_kmh=120 max_draw_us=39655 heap=50756 largest=49152 stack=1048
+428 boot=102 ms=13099 BT_DISCOVERY state=stopped
+429 boot=102 ms=13099 BT_RETRY reason=V-LINK not found delay_ms=3000
+430 boot=102 ms=16111 BT_SCAN_START duration_units=8 target=V-LINK
+431 boot=102 ms=16117 BT_DISCOVERY state=started
+432 boot=102 ms=16163 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+433 boot=102 ms=16222 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-58 name="alex-ThinkPad-T470p"
+434 boot=102 ms=16454 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-59 name="BlueTooth Printer"
+435 boot=102 ms=17134 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+436 boot=102 ms=17735 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+437 boot=102 ms=18455 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+438 boot=102 ms=18535 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-57 name="BlueTooth Printer"
+439 boot=102 ms=18784 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+440 boot=102 ms=19025 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+441 boot=102 ms=19606 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-56 name="alex-ThinkPad-T470p"
+442 boot=102 ms=21397 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-60 name="BlueTooth Printer"
+443 boot=102 ms=22467 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+444 boot=102 ms=22607 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+445 boot=102 ms=22828 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+446 boot=102 ms=22921 HEALTH mode=DEMO shown_kmh=0 max_draw_us=22977 heap=50756 largest=49152 stack=1048
+447 boot=102 ms=23257 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-65 name="BlueTooth Printer"
+448 boot=102 ms=23517 DISCOVER mac=5A:4A:C5:50:8E:0C rssi=-66 name="BlueTooth Printer"
+449 boot=102 ms=23898 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-51 name="alex-ThinkPad-T470p"
+450 boot=102 ms=24399 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-50 name="alex-ThinkPad-T470p"
+451 boot=102 ms=24820 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-53 name="alex-ThinkPad-T470p"
+452 boot=102 ms=24850 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-50 name="alex-ThinkPad-T470p"
+453 boot=102 ms=25422 DISCOVER mac=E4:70:B8:42:6B:38 rssi=-50 name="alex-ThinkPad-T470p"
+454 boot=102 ms=26364 BT_DISCOVERY state=stopped
+455 boot=102 ms=26364 BT_RETRY reason=V-LINK not found delay_ms=6000
+456 boot=103 ms=1028 BOOT version=0.2.0 elf=e57f7955 reset_reason=1 target=V-LINK poll_ms=250 stale_ms=1500
+457 boot=103 ms=1029 HARDWARE chip=1 cores=2 revision=301 classic_bt=1
+458 boot=103 ms=2841 BT_INIT target=V-LINK legacy PIN configured; device discovery each boot
+459 boot=103 ms=2846 UI_MODE DEMO; USB commands: logs, help
+460 boot=103 ms=2846 BT_SPP_INIT status=0
+461 boot=103 ms=2847 BT_SCAN_START duration_units=8 target=V-LINK
+LOG_END

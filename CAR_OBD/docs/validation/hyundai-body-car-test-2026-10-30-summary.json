@@ -1,0 +1,220 @@
+{
+  "file": "docs/validation/hyundai-body-car-test-2026-10-30.txt",
+  "bytes": 583979,
+  "sha256": "ab7d13b41e874ed0ee78a0d8ee68e4957a72867611fdd5c3c53f07722b1114a6",
+  "records": 7927,
+  "seq_first": 155927,
+  "seq_last": 163853,
+  "sequence_gaps": [],
+  "boots": {
+    "172": {
+      "records": 714,
+      "first_ms": 372087,
+      "last_ms": 411897
+    },
+    "173": {
+      "records": 2250,
+      "first_ms": 2394,
+      "last_ms": 1924281
+    },
+    "174": {
+      "records": 56,
+      "first_ms": 2397,
+      "last_ms": 19531
+    },
+    "175": {
+      "records": 422,
+      "first_ms": 2399,
+      "last_ms": 328601
+    },
+    "176": {
+      "records": 304,
+      "first_ms": 2398,
+      "last_ms": 215189
+    },
+    "177": {
+      "records": 26,
+      "first_ms": 2399,
+      "last_ms": 8045
+    },
+    "178": {
+      "records": 1656,
+      "first_ms": 2401,
+      "last_ms": 1393601
+    },
+    "179": {
+      "records": 58,
+      "first_ms": 2403,
+      "last_ms": 24551
+    },
+    "180": {
+      "records": 1179,
+      "first_ms": 2405,
+      "last_ms": 1023264
+    },
+    "181": {
+      "records": 61,
+      "first_ms": 2407,
+      "last_ms": 12313
+    },
+    "182": {
+      "records": 1190,
+      "first_ms": 2407,
+      "last_ms": 109417
+    },
+    "183": {
+      "records": 11,
+      "first_ms": 2408,
+      "last_ms": 4549
+    }
+  },
+  "car_boot": 182,
+  "car_records": 1190,
+  "car_first_ms": 2407,
+  "car_last_ms": 109417,
+  "speed_count": 261,
+  "speed_first_ms": 19112,
+  "speed_last_ms": 104928,
+  "speed_values": {
+    "0": 261
+  },
+  "interval_ms": {
+    "min": 309,
+    "median": 320.0,
+    "mean": 330.0615384615385,
+    "max": 966,
+    "gaps_at_least_1500": 0
+  },
+  "speed_rate_hz": 3.029738044187564,
+  "probes": 2,
+  "body_samples": 0,
+  "probe_errors": [
+    {
+      "seq": 162845,
+      "boot": 182,
+      "ms": 27678,
+      "text": "BODY_PROBE_ERROR reason=adapter/ECU error response display_updated=0 connection_alive=1"
+    },
+    {
+      "seq": 163610,
+      "boot": 182,
+      "ms": 88360,
+      "text": "BODY_PROBE_ERROR reason=adapter/ECU error response display_updated=0 connection_alive=1"
+    }
+  ],
+  "elm_errors": [
+    {
+      "seq": 163827,
+      "boot": 182,
+      "ms": 105217,
+      "text": "ELM_ERROR metric=-1 reason=adapter/ECU error response"
+    },
+    {
+      "seq": 163832,
+      "boot": 182,
+      "ms": 106267,
+      "text": "ELM_ERROR metric=-1 reason=adapter/ECU error response"
+    },
+    {
+      "seq": 163835,
+      "boot": 182,
+      "ms": 107318,
+      "text": "ELM_ERROR metric=-1 reason=adapter/ECU error response"
+    },
+    {
+      "seq": 163839,
+      "boot": 182,
+      "ms": 108367,
+      "text": "ELM_ERROR metric=-1 reason=adapter/ECU error response"
+    },
+    {
+      "seq": 163842,
+      "boot": 182,
+      "ms": 109417,
+      "text": "ELM_ERROR metric=-1 reason=adapter/ECU error response"
+    }
+  ],
+  "ui_transitions": [
+    {
+      "seq": 162659,
+      "boot": 182,
+      "ms": 4544,
+      "text": "UI_MODE DEMO; USB commands: logs, brightness 0..100, dimtest on/off, help"
+    },
+    {
+      "seq": 162751,
+      "boot": 182,
+      "ms": 19141,
+      "text": "UI_MODE LIVE reason=valid 010D response reading_age_ms=29"
+    },
+    {
+      "seq": 163828,
+      "boot": 182,
+      "ms": 105241,
+      "text": "UI_MODE DEMO reason=invalid/disconnected/stale reading reading_age_ms=313"
+    }
+  ],
+  "health": [
+    {
+      "seq": 162717,
+      "boot": 182,
+      "ms": 14591,
+      "text": "HEALTH mode=DEMO shown_kmh=44 max_draw_us=39865 heap=47476 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    },
+    {
+      "seq": 162808,
+      "boot": 182,
+      "ms": 24603,
+      "text": "HEALTH mode=LIVE shown_kmh=0 max_draw_us=59136 heap=47116 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    },
+    {
+      "seq": 162934,
+      "boot": 182,
+      "ms": 34641,
+      "text": "HEALTH mode=LIVE shown_kmh=0 max_draw_us=198 heap=47116 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    },
+    {
+      "seq": 163060,
+      "boot": 182,
+      "ms": 44641,
+      "text": "HEALTH mode=LIVE shown_kmh=0 max_draw_us=102 heap=47116 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    },
+    {
+      "seq": 163188,
+      "boot": 182,
+      "ms": 54641,
+      "text": "HEALTH mode=LIVE shown_kmh=0 max_draw_us=367 heap=47116 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    },
+    {
+      "seq": 163313,
+      "boot": 182,
+      "ms": 64691,
+      "text": "HEALTH mode=LIVE shown_kmh=0 max_draw_us=104 heap=47116 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    },
+    {
+      "seq": 163438,
+      "boot": 182,
+      "ms": 74691,
+      "text": "HEALTH mode=LIVE shown_kmh=0 max_draw_us=98 heap=47116 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    },
+    {
+      "seq": 163563,
+      "boot": 182,
+      "ms": 84691,
+      "text": "HEALTH mode=LIVE shown_kmh=0 max_draw_us=186 heap=47116 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    },
+    {
+      "seq": 163695,
+      "boot": 182,
+      "ms": 94741,
+      "text": "HEALTH mode=LIVE shown_kmh=0 max_draw_us=207 heap=47116 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    },
+    {
+      "seq": 163820,
+      "boot": 182,
+      "ms": 104741,
+      "text": "HEALTH mode=LIVE shown_kmh=0 max_draw_us=105 heap=47116 largest=45056 stack=648 page=SPEED theme=NIGHT brightness=100"
+    }
+  ],
+  "transport_events": []
+}

@@ -1,0 +1,8 @@
+# PlatformIO build output and downloaded ESP-IDF components.
+.pio/
+managed_components/
+
+# Local Python caches and macOS metadata.
+__pycache__/
+*.py[cod]
+.DS_Store
