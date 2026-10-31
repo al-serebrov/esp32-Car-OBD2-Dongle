@@ -85,24 +85,27 @@ int main() {
         // width/arc transition, including when LIVE changes and in both themes.
         for (unsigned slot = 0; slot < 4; ++slot) {
             unsigned coloredPixels = 0;
-            const int left = slot % 2 ? 134 : 62;
-            const int top = slot < 2 ? 152 : 190;
-            for (int y = top; y < top + 36; ++y) {
-                for (int x = left; x < left + 44; ++x) {
+            const int left = slot % 2 ? 194 : 22;
+            const int top = 80 + static_cast<int>(slot / 2) * 28;
+            for (int y = top; y < top + 20; ++y) {
+                for (int x = left; x < left + 24; ++x) {
                     const auto color = ui.row(y)[x];
                     const unsigned r = (color >> 11) & 31, g = (color >> 5) & 63, b = color & 31;
                     if (slot == 0 ? (r > 10 && g > 10 && b < 8) : (r > 15 && g < 20 && b < 12))
                         ++coloredPixels;
                 }
             }
-            assert(coloredPixels > 100);
+            assert(coloredPixels > 25);
         }
         const auto warningFrame = pixels;
         for (int speed = 0; speed <= 255; ++speed) {
             ui.showSpeed(speed); ui.setLive(speed % 2);
-            for (int y = 152; y < 226; ++y)
-                assert(std::equal(ui.row(y) + 62, ui.row(y) + 178,
-                                  warningFrame.begin() + 1 + y * config::kWidth + 62));
+            for (int y = 80; y < 156; ++y) for (int x = 22; x < 218; ++x) {
+                if (x >= 46 && x < 194) continue;
+                const int dx=x-120,dy=y-120;
+                if(dx*dx+dy*dy<103*103)
+                    assert(ui.row(y)[x]==warningFrame[1+y*config::kWidth+x]);
+            }
         }
         ui.showSpeed(87); ui.setLive(true);
     }
@@ -144,21 +147,25 @@ int main() {
         const auto canonical = warningPixels;
         const auto verifyGrid = [&](std::initializer_list<WarningIcon> expected) {
             unsigned slot = 0;
-            const int top = expected.size() <= 2 ? 184 : 152;
             for (const auto icon : expected) {
-                const int x0 = slot % 2 ? 134 : 62, y0 = top + static_cast<int>(slot / 2)*38;
+                const int x0 = slot % 2 ? 194 : 22, y0 = 80 + static_cast<int>(slot / 2)*28;
                 const unsigned source = static_cast<unsigned>(icon);
-                const int sourceX = source % 2 ? 134 : 62, sourceY = source < 2 ? 152 : 190;
-                for (int y = 0; y < 36; ++y)
-                    for (int x = 0; x < 44; ++x)
-                        assert(warnings.row(y0 + y)[x0 + x] == canonical[(sourceY+y)*config::kWidth+sourceX+x]);
+                const int sourceX = source % 2 ? 194 : 22, sourceY = 80 + static_cast<int>(source / 2)*28;
+                for (int y = 0; y < 20; ++y)
+                    for (int x = 0; x < 24; ++x) {
+                        const int dx=x0+x-120,dy=y0+y-120;
+                        const int sx=sourceX+x-120,sy=sourceY+y-120;
+                        // The curved dial edge outside the icon is location-dependent.
+                        if(dx*dx+dy*dy<103*103 && sx*sx+sy*sy<103*103)
+                            assert(warnings.row(y0 + y)[x0 + x] == canonical[(sourceY+y)*config::kWidth+sourceX+x]);
+                    }
                 ++slot;
             }
             std::array<uint16_t, count> freshPixels{};
             GaugeRenderer referenceGauge(freshPixels.data());
             for (const auto icon : expected) referenceGauge.setWarning(icon, true);
             referenceGauge.begin(); referenceGauge.setView(day, false); referenceGauge.showSpeed(111);
-            assert(warningPixels == freshPixels); // Includes growing digits, unit relocation, stale icon clearing.
+            assert(warningPixels == freshPixels); // Includes fixed-size digits and stale icon clearing.
         };
         for (auto icon : {WarningIcon::CheckEngine, WarningIcon::ParkingBrake, WarningIcon::Overheat, WarningIcon::Seatbelt})
             warnings.setWarning(icon, false);
@@ -256,18 +263,18 @@ int main() {
         const auto fullDemo = demoPixels;
         for (unsigned slot = 0; slot < 5; ++slot) {
             unsigned colored = 0;
-            const int left = slot % 2 ? 140 : 68, top = 140 + static_cast<int>(slot / 2) * 28;
-            for (int y = top; y < top + 26; ++y)
-                for (int x = left; x < left + 32; ++x)
+            const int left = slot % 2 ? 194 : 22, top = 80 + static_cast<int>(slot / 2) * 28;
+            for (int y = top; y < top + 20; ++y)
+                for (int x = left; x < left + 24; ++x)
                     if (demo.row(y)[x] != (day ? 0xffff : 0)) ++colored;
-            assert(colored > 50); // Includes the fifth, battery icon on a third row.
+            assert(colored > 25); // Includes the fifth, battery icon in the left column.
         }
         demo.takeDirty(); demo.setDemoWarnings(true);
         assert(demo.takeDirty().empty());
         for (int speed : {0, 9, 99, 100, 199, 255, 111}) demo.showSpeed(speed);
         assert(demoPixels == fullDemo);
-        demo.setWarning(WarningIcon::Battery, false); // Compact -> full-size layout.
-        demo.setWarning(WarningIcon::Battery, true); // Full-size -> compact, without trails.
+        demo.setWarning(WarningIcon::Battery, false); // Clear the last side slot.
+        demo.setWarning(WarningIcon::Battery, true); // Restore it without trails.
         assert(demoPixels == fullDemo);
         demo.setView(day, true); demo.setDemoWarnings(false);
         demo.setView(day, false); demo.showSpeed(111);

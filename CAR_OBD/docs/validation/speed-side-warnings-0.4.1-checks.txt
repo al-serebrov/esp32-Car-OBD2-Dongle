@@ -1,0 +1,13 @@
+PASS: simulation bounds/endpoints, up/down redraw equivalence, framebuffer guards, dirty tracking
+PASS: button bounce/single/double/hold/boot, theme/page redraw, missing/stale/zero metrics
+PASS: fixed 120px digits, centred three-digit ink, all warning subsets, side-column redraws, hidden pages, overlay
+SCHEDULER_MODEL monitoring=0 duration_ms=120000 reply_ms=60 speed_samples=388 optional=0 max_speed_gap_ms=310 rate_hz=3.226
+SCHEDULER_MODEL monitoring=1 duration_ms=120000 reply_ms=60 speed_samples=379 optional=24 max_speed_gap_ms=420 rate_hz=3.155
+PASS: strict PIDs, multi-ECU MIL, 10/20/20s monitoring, speed priority, voltage, optional recovery, body speed gate
+DIAGNOSTIC_SCHEDULER focused=0 duration_ms=300000 reply_ms=60 speed_samples=770 optional=282 max_speed_gap_ms=790
+FOCUSED_SAMPLES tcm21A0=218 tcm21A1=54 engine2101=54 RPM=55 IAT=54
+DIAGNOSTIC_SCHEDULER focused=1 duration_ms=300000 reply_ms=60 speed_samples=495 optional=494 max_speed_gap_ms=790
+PASS: discovery parsing/capabilities, bounded routing and timeout quarantine, page exit, speed gate, trip, persisted report (7608 bytes)
+PASS: flash rollover, ordered export, reboot retention, CRC, all 256 interrupted writes, interrupted erases
+DRIVING_SCHEDULER speed_samples=274 RPM=40 load=40 throttle=40 gear=39 max_gap_ms=790
+PASS: driver-confirmed P/R/N/D, routed page polling/exit, fresh/missing data, driving redraws, hollow 40-75% MIL layer

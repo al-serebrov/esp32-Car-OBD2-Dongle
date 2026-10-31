@@ -7,9 +7,7 @@
 
 namespace {
 constexpr unsigned kPixels = config::kWidth * config::kHeight;
-constexpr std::array<int,4> kDigitHeights{120,104,88,76};
-constexpr std::array<int,4> kDigitTops{50,42,38,34};
-constexpr std::array<int,4> kDigitBottoms{170,146,126,110};
+constexpr int kDigitHeight=120, kDigitTop=50, kDigitBottom=170;
 bool digitInk(uint16_t pixel, bool day) {
     // Only the numerals use neutral text/background alpha; arc/unit/icons are coloured.
     for (unsigned alpha = 1; alpha <= 15; ++alpha) {
@@ -35,25 +33,24 @@ int main() {
             fresh.begin(); fresh.setPage(day,0); fresh.showSpeed(111); fresh.setLive(true);
             assert(std::equal(clean.begin(),clean.end(),pixels.begin()+1));
             assert(pixels.front()==0xa55a && pixels.back()==0xa55a);
-            const auto rows=(order.size()+1)/2;
             int minY=240,maxY=-1,minX=240,maxX=-1;
-            for (int y=30;y<kDigitBottoms[rows];++y) for (int x=20;x<220;++x) {
+            for (int y=30;y<kDigitBottom;++y) for (int x=48;x<192;++x) {
                 if (!digitInk(gauge.row(y)[x],day)) continue;
                 minY=std::min(minY,y);maxY=std::max(maxY,y);
                 minX=std::min(minX,x);maxX=std::max(maxX,x);
             }
             // Glyph 1 has a small top/bottom bearing within its nominal font height.
-            assert(minY>=kDigitTops[rows] && minY<=kDigitTops[rows]+2);
-            assert(maxY-minY+1>=kDigitHeights[rows]-3 && maxY-minY+1<=kDigitHeights[rows]);
-            assert(std::abs(minX+maxX-239)<=1); // Leading 1 remains visually centred at every size.
+            assert(minY>=kDigitTop && minY<=kDigitTop+2);
+            assert(maxY-minY+1>=kDigitHeight-3 && maxY-minY+1<=kDigitHeight);
+            assert(std::abs(minX+maxX-239)<=1); // Leading 1 remains visually centred with every warning count.
             gauge.takeDirty();gauge.showSpeed(111);
             assert(gauge.takeDirty().empty());
         };
         verify();
-        // Traverse every row boundary in both directions, preserving arrival order.
+        // Fill and clear side slots in activation order without changing digit size.
         for (unsigned i=0;i<5;++i) {auto icon=static_cast<WarningIcon>(i);order.push_back(icon);gauge.setWarning(icon,true);verify();}
         for (unsigned i=0;i<5;++i) {auto icon=static_cast<WarningIcon>(i);order.erase(order.begin());gauge.setWarning(icon,false);verify();}
-        // Exercise all active subsets; redraws must remove both old icons and old numerals.
+        // Exercise all active subsets; redraws must remove old icons without moving numerals.
         for (unsigned mask=0;mask<32;++mask) {
             for (unsigned i=0;i<5;++i) {
                 const auto icon=static_cast<WarningIcon>(i);
@@ -68,12 +65,17 @@ int main() {
             const auto stableFrame=pixels;
             for (const auto speed:{9,11,99,100,110,199,255,111}) {
                 gauge.showSpeed(speed);
-                const auto rows=(order.size()+1)/2;
-                for (int y=kDigitBottoms[rows];y<228;++y) for (int x=20;x<220;++x) {
+                for (int y=80;y<156;++y) for (int x=22;x<218;++x) {
+                    if(x>=46 && x<194)continue;
                     const int dx=x-120,dy=y-120;
-                    if (dx*dx+dy*dy<103*103 || (x>=62 && x<178 && y>=140 && y<226))
+                    if(dx*dx+dy*dy<103*103)
                         assert(gauge.row(y)[x]==stableFrame[1+y*config::kWidth+x]);
                 }
+                std::array<uint16_t,kPixels> expected{};
+                GaugeRenderer reference(expected.data());reference.setPage(day,1);
+                for(auto icon:order)reference.setWarning(icon,true);
+                reference.begin();reference.setPage(day,0);reference.showSpeed(speed);reference.setLive(true);
+                assert(std::equal(expected.begin(),expected.end(),pixels.begin()+1));
             }
             verify();
             if (mask!=0 && mask!=1 && mask!=3 && mask!=7 && mask!=31) continue;
@@ -90,5 +92,5 @@ int main() {
         gauge.clearDimmingTest();gauge.showSpeed(111);
         order.clear();verify();
     }
-    std::puts("PASS: 120/104/88/76px adaptive digits, centred three-digit ink, all warning subsets, grow/shrink redraws, hidden pages, overlay");
+    std::puts("PASS: fixed 120px digits, centred three-digit ink, all warning subsets, side-column redraws, hidden pages, overlay");
 }

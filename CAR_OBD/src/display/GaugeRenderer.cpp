@@ -20,14 +20,11 @@ constexpr Palette kDay{rgb(255, 255, 255), rgb(210, 215, 220), rgb(0, 115, 105),
 const Palette& palette(bool day) { return day ? kDay : kNight; }
 constexpr int kSegments = 80;
 constexpr int kArcInnerRadius = 103;
-struct SpeedLayout { int digitTop, unitTop, iconTop, iconWidth, iconHeight, iconPitch; };
-constexpr SpeedLayout kSpeedLayouts[] = {
-    {50, 182, 184, 44, 36, 38}, // No warnings: full 120px digits.
-    {42, 156, 184, 44, 36, 38}, // One row: 104px digits.
-    {38, 134, 152, 44, 36, 38}, // Two rows: 88px digits.
-    {34, 120, 140, 32, 26, 28}, // Three rows: 76px digits.
-};
-unsigned warningRows(unsigned count) { return (count + 1) / 2; }
+constexpr int kSpeedDigitTop = 50;
+constexpr int kSpeedUnitTop = 182;
+constexpr int kSpeedNumberWidth = 144;
+constexpr int kWarningLeft = 22, kWarningRight = 194;
+constexpr int kWarningTop = 80, kWarningWidth = 24, kWarningHeight = 20, kWarningPitch = 28;
 constexpr float kPi = 3.14159265359f;
 
 // Compact vector strokes; sampled at 2x2 for smooth warning-icon edges.
@@ -197,7 +194,7 @@ void GaugeRenderer::digit(int value, int x, int y, int profile) {
     for (unsigned alpha = 0; alpha < 16; ++alpha) {
         colors[alpha] = blend(foreground, background, alpha, 15);
     }
-    const auto& font = speedfont::kFonts[profile < 0 ? warningRows(warningCount_) : static_cast<unsigned>(profile)];
+    const auto& font = speedfont::kFonts[profile < 0 ? 0u : static_cast<unsigned>(profile)];
     for (int row = 0; row < font.height; ++row) {
         for (int col = 0; col < font.width; ++col) {
             const int offset = row * font.width + col;
@@ -261,7 +258,7 @@ void GaugeRenderer::begin() {
     live_ = false;
     lastDimmingTestPercent_ = -1;
     for (int i = 0; i < kSegments; ++i) arcSegment(i, palette(day_).track);
-    text("KM/H", 120, kSpeedLayouts[warningRows(warningCount_)].unitTop, 2, palette(day_).muted);
+    text("KM/H", 120, kSpeedUnitTop, 2, palette(day_).muted);
     warningIcons();
     statusIndicator();
     showSpeed(0);
@@ -274,30 +271,32 @@ void GaugeRenderer::showSpeed(int kmh) {
     for (int i = std::min(count, lastSegments_); i < std::max(count, lastSegments_); ++i)
         arcSegment(i, i < count ? palette(day_).accent : palette(day_).track);
     lastSegments_ = count;
-    const auto rows = warningRows(warningCount_);
-    const auto& font = speedfont::kFonts[rows];
-    const auto& layout = kSpeedLayouts[rows];
-    const int numberWidth = 3 * font.width;
-    const int numberLeft = (config::kWidth - numberWidth) / 2;
-    // Clear in RAM only. The panel receives completed pixels, never a blank frame.
-    // Clear only the dial interior. The large bounding box reaches the arc
-    // near its corners; a rectangular erase would remove those arc pixels.
-    for (int y = layout.digitTop; y < layout.digitTop + font.height; ++y) {
-        for (int x = numberLeft; x < numberLeft + numberWidth; ++x) {
-            const int dx = x - 120, dy = y - 120;
-            if (dx * dx + dy * dy < kArcInnerRadius * kArcInnerRadius)
-                pixel(x, y, palette(day_).background);
-        }
-    }
+    const auto& font = speedfont::kFonts[0];
+    // Reserve a fixed central strip, leaving both warning columns untouched.
+    const int numberLeft = (config::kWidth - kSpeedNumberWidth) / 2;
+    for (int y = kSpeedDigitTop; y < kSpeedDigitTop + font.height; ++y)
+        for (int x = numberLeft; x < numberLeft + kSpeedNumberWidth; ++x)
+            pixel(x, y, palette(day_).background);
     char number[8];
     std::snprintf(number, sizeof(number), "%d", kmh);
     const int length = static_cast<int>(std::strlen(number));
-    // Center visible ink using the leading glyph's bearing. All glyphs share
-    // a right edge, so the last two cells never reflow throughout 100..199.
     const int leadingInset = font.inkLeft[number[0] - '0'];
     const int visibleWidth = length * font.width - leadingInset;
-    const int left = (config::kWidth - visibleWidth) / 2 - leadingInset;
-    for (int i = 0; i < length; ++i) digit(number[i] - '0', left + i * font.width, layout.digitTop);
+    // Up to 199 retains the original full-width glyphs. Wider 200..255 readings
+    // fit horizontally inside the same strip while keeping the full 120px height.
+    const int width = std::min(visibleWidth, kSpeedNumberWidth);
+    const int left = (config::kWidth - width) / 2;
+    uint16_t colors[16];
+    for (unsigned alpha = 0; alpha < 16; ++alpha)
+        colors[alpha] = blend(palette(day_).text, palette(day_).background, alpha, 15);
+    for (int y = 0; y < font.height; ++y) for (int x = 0; x < width; ++x) {
+        const int source = leadingInset + x * visibleWidth / width;
+        const int glyph = number[source / font.width] - '0';
+        const int offset = y * font.width + source % font.width;
+        const uint8_t packed = font.alpha[glyph * font.width * font.height / 2 + offset / 2];
+        const unsigned alpha = offset % 2 ? packed & 15 : packed >> 4;
+        if (alpha) pixel(left + x, kSpeedDigitTop + y, colors[alpha]);
+    }
     lastSpeed_ = kmh;
 }
 
@@ -310,12 +309,11 @@ void GaugeRenderer::setLive(bool live) {
 void GaugeRenderer::warningIcons() {
     const uint16_t amber = day_ ? rgb(160, 90, 0) : rgb(255, 185, 35);
     const uint16_t red = day_ ? rgb(195, 15, 30) : rgb(255, 60, 65);
-    const auto& layout = kSpeedLayouts[warningRows(warningCount_)];
-    const int width = layout.iconWidth, height = layout.iconHeight;
+    const int width = kWarningWidth, height = kWarningHeight;
     for (unsigned index = 0; index < warningCount_; ++index) {
         const auto icon = warningOrder_[index];
-        const int left = (width == 32 ? 68 : 62) + static_cast<int>(index % 2) * 72;
-        const int top = layout.iconTop + static_cast<int>(index / 2) * layout.iconPitch;
+        const int left = index % 2 ? kWarningRight : kWarningLeft;
+        const int top = kWarningTop + static_cast<int>(index / 2) * kWarningPitch;
         const uint16_t color = icon == WarningIcon::CheckEngine ? amber : red;
         for (int y = 0; y < height; ++y) {
             for (int x = 0; x < width; ++x) {
@@ -326,57 +324,44 @@ void GaugeRenderer::warningIcons() {
                         if (onWarningIcon(icon, px, py)) ++coverage;
                     }
                 }
-                if (coverage) pixel(left + x, top + y,
+                const int dx = left + x - 120, dy = top + y - 120;
+                if (coverage && dx * dx + dy * dy < kArcInnerRadius * kArcInnerRadius) pixel(left + x, top + y,
                     blend(color, palette(day_).background, coverage, 4));
             }
         }
     }
 }
 
-void GaugeRenderer::redrawWarnings(unsigned previousCount) {
+void GaugeRenderer::redrawWarnings() {
     if (page_ != 0) return;
-    const auto rows = warningRows(warningCount_);
-    if (rows != warningRows(previousCount)) {
-        // Remove all previous digit/unit positions without touching the arc.
-        // Only completed pixels are flushed, so resizing never exposes a blank frame.
-        for (int y = 17; y < 224; ++y) for (int x = 17; x < 224; ++x) {
-            const int dx = x - 120, dy = y - 120;
-            if (dx * dx + dy * dy < kArcInnerRadius * kArcInnerRadius)
-                pixel(x, y, palette(day_).background);
-        }
-        rectangle(62, 140, 116, 86, palette(day_).background);
-        text("KM/H", 120, kSpeedLayouts[rows].unitTop, 2, palette(day_).muted);
-        const int speed = std::max(lastSpeed_, 0);
-        lastSpeed_ = -1;
-        showSpeed(speed);
-        if (lastDimmingTestPercent_ >= 0) {
-            const auto percent = static_cast<unsigned>(lastDimmingTestPercent_);
-            lastDimmingTestPercent_ = -1;
-            showDimmingTestPercent(percent);
-        }
-    } else if (rows) {
-        const int top = kSpeedLayouts[rows].iconTop;
-        rectangle(62, top, 116, 226 - top, palette(day_).background);
+    // Clear only the six side slots. Speed, unit and the outer arc stay intact.
+    for (unsigned index = 0; index < 6; ++index) {
+        const int left = index % 2 ? kWarningRight : kWarningLeft;
+        const int top = kWarningTop + static_cast<int>(index / 2) * kWarningPitch;
+        for (int y = top; y < top + kWarningHeight; ++y)
+            for (int x = left; x < left + kWarningWidth; ++x) {
+                const int dx = x - 120, dy = y - 120;
+                if (dx * dx + dy * dy < kArcInnerRadius * kArcInnerRadius)
+                    pixel(x, y, palette(day_).background);
+            }
     }
     warningIcons();
 }
 
 void GaugeRenderer::setDemoWarnings(bool enabled) {
     if (enabled == demoWarnings_) return;
-    const auto previousCount = warningCount_;
     demoWarnings_ = enabled;
     warningCount_ = 0;
     if (enabled) {
         for (unsigned i = 0; i < static_cast<unsigned>(WarningIcon::Count); ++i)
             warningOrder_[warningCount_++] = static_cast<WarningIcon>(i);
     }
-    redrawWarnings(previousCount);
+    redrawWarnings();
 }
 
 void GaugeRenderer::setWarning(WarningIcon icon, bool active) {
     if (static_cast<unsigned>(icon) >= static_cast<unsigned>(WarningIcon::Count)) return;
     unsigned index = 0;
-    const auto previousCount = warningCount_;
     while (index < warningCount_ && warningOrder_[index] != icon) ++index;
     if (active) {
         if (index < warningCount_) return; // Repeated readings do not reorder icons.
@@ -388,7 +373,7 @@ void GaugeRenderer::setWarning(WarningIcon icon, bool active) {
     }
     // State may change while the engine-data page is visible. Its next speed
     // page render will use the same order without drawing icons over the tiles.
-    redrawWarnings(previousCount);
+    redrawWarnings();
 }
 
 void GaugeRenderer::statusIndicator() {

@@ -52,7 +52,7 @@ private:
     void arcSegment(int index, uint16_t color);
     void statusIndicator();
     void warningIcons();
-    void redrawWarnings(unsigned previousCount);
+    void redrawWarnings();
     void clear();
     void beginDetails();
     void beginDriving();

@@ -1,7 +1,7 @@
 # ESP32 OBD speedometer
 
 PlatformIO + ESP-IDF 5.5.0, original ESP32 DevKit V1, one 240×240 GC9A01 SPI TFT,
-Vgate iCar Pro Bluetooth 3.0 / `V-LINK`. Source version: **0.4.0**.
+Vgate iCar Pro Bluetooth 3.0 / `V-LINK`. Source version: **0.4.1**.
 The car-verified firmware is 0.2.1. GPIO4 brightness control was visually confirmed
 in 0.2.3. Version 0.2.4 removes the temporary loop and percentage overlay and
 holds brightness at 100% after startup.
@@ -35,6 +35,9 @@ Version 0.3.12 restores large speed digits when there are no warnings and resize
 the speed/unit/icon layout with the number of occupied warning rows.
 Version 0.3.13 fixes padded multi-frame decoding and focuses the third page on
 the responsive Hyundai transmission/engine candidates from the first ride.
+Version 0.4.0 adds the driving page and hollow pulsing MIL overlay.
+Version 0.4.1 moves speed-page warnings into side columns and keeps the largest
+120px speed reading, with no resizing when warnings appear or clear.
 The current seven-pin display has no LED/BL pin; GPIO4 is disconnected.
 The owner observed that GC9A01 SPI brightness commands changed the test label
 but had no effect on light output. The selected environment is now
@@ -45,7 +48,7 @@ been stopped; normal operation starts at 100%, with hold-to-toggle 50%/100%.
 The previous `esp32doit-devkit-v1-backlight` profile retains GPIO4 PWM, and the
 base `esp32doit-devkit-v1` profile leaves brightness control disabled.
 
-## Current pages (0.4.0)
+## Current pages (0.4.1)
 
 Double-click cycles **speed → driving → engine data → diagnostics → speed**.
 Single click toggles day/night, and holding the button past one second toggles
@@ -132,24 +135,20 @@ is page three. The focused candidate profile otherwise retains its behavior.
    a speed response is invalid, or the reading is at least 1.5 seconds old, return
    to **demo with a yellow status light**. Never show stale speed with a green light.
 
-The speed page uses the small round yellow/green status indicator and compact
-smooth speed digits above a two-column warning grid. DEMO shows synthetic Check
-Engine, parking-brake, overheat, seatbelt and battery icons, like a bulb-check
-preview. Five icons fit as three rows of compact 32x26 cells. In LIVE, up to three
-measured alerts use the larger 44x36 cells: amber Check Engine, red temperature
-and red low-voltage battery. Speed digits use the available space automatically:
+The speed page keeps its largest **120px-high** smooth reading with warning
+icons in two side columns. Each column has three 24x20px slots, filled in
+activation order: upper left, upper right, then the next pair down. Clearing
+one warning closes the gap. Speed and KM/H keep the same size and position
+regardless of the number of warnings, with a fixed gap between icons and digits.
+Readings through 199 km/h retain the original glyph width; wider 200–255 readings
+fit horizontally into the central strip while retaining the same 120px height.
+The outer speed arc and status dot remain in place.
 
-| Occupied warning rows | Warning count | Digit height |
-| --- | --- | --- |
-| None | 0 | 120 px |
-| One | 1–2 | 104 px |
-| Two | 3–4 | 88 px |
-| Three | 5 | 76 px |
-
-Adding a row shrinks and raises the reading; clearing a row restores the larger
-size. KM/H and the icon grid move together. Changes within the same row count
-keep the reading size/position stable. The complete updated frame is composed
-in memory before transfer, without an intermediate blank display.
+DEMO shows synthetic Check Engine, parking-brake, overheat, seatbelt and battery
+icons, like a bulb-check preview. LIVE uses measured Check Engine, temperature
+and low-voltage warnings. Only the side slots redraw when warning state changes;
+speed updates leave those slots intact. The complete frame is composed in memory
+before transfer, without an intermediate blank display.
 Normal live parking-brake and seatbelt polling/display remain disabled pending an
 LM-specific definition. The opt-in diagnostics page may probe these candidates for logs only. Switching to LIVE clears all demo samples first.
 The renderer's `setWarning(icon, active)` updates a compact, activation-ordered
@@ -158,7 +157,7 @@ theme/page switches. Clearing one icon closes the gap; reactivation appends it.
 
 ### Check Engine, coolant and voltage monitoring
 
-Background requests run on all three pages:
+Background requests run on all four pages:
 
 | Reading | Request | Target interval |
 | --- | --- | --- |
@@ -362,7 +361,7 @@ The third page now runs **CANDIDATES**, selected by `kCandidateDiagnostics=true`
 The broad discovery profile described below remains available in source, but is
 not the active ride workload. Double-click three times from speed to enter diagnostics;
 leaving that page stops new probes after in-flight routing is restored. Other
-button gestures and the adaptive speed/warning layout remain unchanged.
+button gestures and the speed/warning layout remain unchanged.
 
 The focused schedule uses only the blocks that returned positive replies in
 boot 191 of the first ride, plus two standard references:

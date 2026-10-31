@@ -4,3 +4,10 @@ managed_components/
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
+
+# Local device captures, build/upload transcripts and derived ride data.
+/docs/validation/*.txt
+!/docs/validation/*checks.txt
+/docs/validation/*.csv
+/docs/validation/*-summary.json
+*.log
