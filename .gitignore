@@ -6,3 +6,6 @@ managed_components/
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# Optional local environment for agent/CLI setup.
+/.venv/

@@ -108,6 +108,20 @@ be verified; see the [backlight details](CAR_OBD/README.md).
 
 ## Build and flash
 
+### Set up with an AI coding agent
+
+The root [AGENTS.md](AGENTS.md) provides setup, build, test and development
+instructions for coding agents. Give your agent this repository and a prompt
+such as:
+
+> Read AGENTS.md and set up this project on my computer. Reuse existing tools
+> where possible, install missing dependencies in an isolated environment,
+> build the default firmware and run the host checks. Tell me what passed and
+> what hardware details are still needed. Do not flash a board yet.
+
+An agent that does not automatically load `AGENTS.md` can still read it when
+explicitly asked. Desktop setup does not require a connected ESP32 or car.
+
 ### 1. Install the tools and open the project
 
 Install [PlatformIO IDE for VS Code](https://docs.platformio.org/en/latest/integration/ide/vscode.html).
@@ -262,6 +276,7 @@ still contain the original logs; their history has not been removed.
 
 ```text
 README.md                         Start here: hardware, setup and development
+AGENTS.md                         Setup and development instructions for AI agents
 CAR_OBD/                          Active PlatformIO / ESP-IDF project
   platformio.ini                  Board, pinned platform and build profiles
   CMakeLists.txt                  ESP-IDF project and firmware version
