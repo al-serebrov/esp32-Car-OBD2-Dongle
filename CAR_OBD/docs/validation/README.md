@@ -1,5 +1,11 @@
 # Bluetooth field-debug bench validation
 
+Raw device captures, build/upload transcripts and derived ride data are kept
+locally and ignored by Git. They may be referenced by the reports below but
+are not included in new checkouts. Analysis notes, preview images, host-check
+results and parser fixtures remain versioned. Earlier commits retain the
+original captures; history has not been rewritten.
+
 - Firmware: 0.2.0; final build ELF prefix `e57f7955`.
 - Native ESP-IDF build/upload succeeded on ESP32-D0WD-V3, 4 MB BOYA flash.
 - Classic SPP initialized successfully; real nearby names/MACs/RSSI were recorded.

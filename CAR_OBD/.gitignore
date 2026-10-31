@@ -10,4 +10,5 @@ managed_components/
 !/docs/validation/*checks.txt
 /docs/validation/*.csv
 /docs/validation/*-summary.json
+fieldlogs-*.txt
 *.log
